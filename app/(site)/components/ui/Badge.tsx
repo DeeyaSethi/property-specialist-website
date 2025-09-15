@@ -1,4 +1,4 @@
-type BadgeProps = React.PropsWithChildren<{}>;
+type BadgeProps = React.PropsWithChildren<Record<string, never>>;
 
 export default function Badge({ children }: BadgeProps) {
   return (

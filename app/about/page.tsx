@@ -162,8 +162,8 @@ export default function AboutPage() {
               <div className="bg-[--color-brand] text-white p-6 rounded-xl">
                 <h4 className="font-bold mb-2">Vision Statement</h4>
                 <p className="text-sm opacity-90">
-                  "To make Property Specialist the go-to brand for real estate advisory, 
-                  investment, and project sales management in India."
+                  &ldquo;To make Property Specialist the go-to brand for real estate advisory, 
+                  investment, and project sales management in India.&rdquo;
                 </p>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function AboutPage() {
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white border-2 border-[--color-brand] text-[--color-brand] px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <span className="w-2 h-2 bg-[--color-brand] rounded-full animate-pulse"></span>
-            Let's Connect
+            Let&apos;s Connect
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-4">Ready to Transform Your Real Estate Journey?</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">

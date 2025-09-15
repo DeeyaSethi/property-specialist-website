@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
       <div className="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
-        <a href="/" className="text-[--color-brand] font-semibold">Property Specialist</a>
+        <Link href="/" className="text-[--color-brand] font-semibold">Property Specialist</Link>
         <nav className="hidden md:flex items-center gap-4 text-sm">
           <a href="/about" className="hover:text-[--color-brand] font-medium">About Founder</a>
           <a href="/developers" className="hover:text-[--color-brand]">Developers</a>

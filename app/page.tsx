@@ -1,9 +1,7 @@
 import Section from "./(site)/components/ui/Section";
-import CardLink from "./(site)/components/ui/CardLink";
 import Button from "./(site)/components/ui/Button";
 import Image from "next/image";
 import Accordion from "./(site)/components/ui/Accordion";
-import Icon from "./(site)/components/ui/Icon";
 
 export default function Home() {
   return (

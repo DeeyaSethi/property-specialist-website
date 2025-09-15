@@ -1,3 +1,2 @@
-
-
-use the 
+i using hostinger and vercel
+explainn properly how to do the Domain Configuration:
