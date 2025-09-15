@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.example.com"),
+  metadataBase: new URL("https://propertyspecialist.in"),
   title: {
     default: "Property Specialist — Real Estate in Delhi NCR & Vrindavan",
     template: "%s | Property Specialist",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Property Specialist — Your Trusted Partner",
     description:
       "End-to-end real estate advisory for developers, investors, and home buyers.",
-    url: "https://www.example.com",
+    url: "https://propertyspecialist.in",
     siteName: "Property Specialist",
   },
   twitter: { card: "summary_large_image" },
@@ -50,7 +50,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Property Specialist",
-              url: "https://www.example.com",
+              url: "https://propertyspecialist.in",
               areaServed: ["Delhi NCR", "Vrindavan", "Noida", "Gurgaon"],
               address: { "@type": "PostalAddress", addressCountry: "IN" },
               telephone: "+919910070102",

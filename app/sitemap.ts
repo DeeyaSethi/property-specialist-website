@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.example.com";
+  const base = "https://propertyspecialist.in";
   return [
     { url: `${base}/`, changeFrequency: "weekly", priority: 1.0 },
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.7 },
