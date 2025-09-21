@@ -46,7 +46,7 @@ export default function Footer() {
             <h3 style={{color: 'white'}} className="font-bold text-lg">Contact Info</h3>
             <div className="space-y-3">
               <div style={{color: 'white'}} className="font-medium">📧 manojsethi@propertyspecialist.com</div>
-              <div style={{color: 'white'}} className="font-medium">🕒 Mon-Sat: 9:00 AM - 7:00 PM</div>
+              <div style={{color: 'white'}} className="font-medium">🕒 Every Day: 9:00 AM - 7:00 PM</div>
               <div style={{color: 'white'}} className="font-medium">📍 Serving Delhi NCR & Vrindavan</div>
             </div>
           </div>

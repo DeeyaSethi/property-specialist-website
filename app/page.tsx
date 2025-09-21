@@ -56,7 +56,47 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Meet Manoj Sethi - Moved to prominent position */}
+      {/* Meet Manoj Sethi Section */}
+      <Section className="bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="flex flex-col items-center gap-8">
+            {/* Heading */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[--color-navy] mb-0 font-serif leading-tight">
+              Meet <span className="text-[--color-gold]">Manoj Sethi</span>
+            </h2>
+            
+            {/* Profile Image */}
+            <div className="flex-shrink-0 relative">
+              <div className="relative w-48 h-48 lg:w-56 lg:h-56">
+                <Image 
+                  src="/images/manoj-sethi.jpg" 
+                  alt="Manoj Sethi - Property Specialist" 
+                  fill
+                  className="object-cover rounded-2xl shadow-lg"
+                />
+                <div className="absolute -top-2 -right-2 bg-[#d4af37] text-white px-3 py-1 rounded-full text-xs font-bold shadow-2xl border-4 border-white" style={{backgroundColor: '#d4af37', color: 'white', zIndex: 20}}>
+                  25+ Years
+                </div>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="text-center">
+              <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
+                A leading authority in real estate with <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years of experience</span> and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crores</span> in successful deals. Providing research-driven insights and strategic guidance across Delhi NCR & Vrindavan.
+              </p>
+              
+              <div className="flex justify-center">
+                <a href="/about">
+                  <Button className="px-10 py-4 text-lg royal-shadow hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 bg-[--color-navy] text-white hover:bg-[--color-gold] border-2 border-[--color-navy] hover:border-[--color-gold] font-bold">
+                    Learn About Manoj →
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
 
       <Section id="sections" className="border-t border-gray-200 bg-[--color-muted]">
         <div className="text-center mb-8">
