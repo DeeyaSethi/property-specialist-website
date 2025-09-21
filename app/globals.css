@@ -1,21 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a; /* slate-900 for deep readable text */
+  --background: #f5f5f5; /* Professional light background */
+  --foreground: #111827; /* Professional dark text */
 }
 
 @theme inline {
-  /* Brand colors */
-  --color-brand: #2563EB; /* Blue 600 */
-  --color-navy: #1E3A8A;  /* Blue 800 */
-  --color-accent: #60A5FA; /* Blue 400 */
-  --color-muted: #F5F7FF; /* Very light blue background */
+  /* Professional Real Estate Colors */
+  --color-brand: #1e3a8a; /* Primary navy blue for headings and buttons */
+  --color-navy: #1e3a8a;  /* Primary navy blue */
+  --color-gold: #c5a880;  /* Secondary warm gold for accents and hover */
+  --color-royal-gold: #d4af37; /* Rich royal gold */
+  --color-light-gold: #f4e4bc; /* Light golden shade */
+  --color-dark-gold: #b8860b; /* Dark golden shade */
+  --color-accent: #c5a880; /* Secondary warm gold accent */
+  --color-muted: #f5f5f5; /* Professional light background */
+  --color-text: #111827;   /* Professional dark text */
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
 }
 
 /* Enhanced animations */
@@ -108,17 +113,237 @@
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* Typography helpers */
-.lead { color: #334155; font-size: 1.125rem; line-height: 1.7; }
-.content h2 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-navy); }
-.content p { margin-top: 0.75rem; color: #475569; }
-.content ul { margin-top: 0.75rem; padding-left: 1rem; display: grid; gap: 0.5rem; }
-.content li { color: #475569; }
+/* Blueprint overlay pattern */
+.blueprint-overlay {
+  position: relative;
+}
 
-/* Lock to light theme for brand consistency */
+.blueprint-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(30, 58, 138, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 58, 138, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 1;
+}
 
+/* Premium card styles */
+.premium-card {
+  background: white;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: rgba(197, 168, 128, 0.3);
+}
+
+/* Professional Real Estate Typography */
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Text contrast improvements */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(212, 175, 55, 0.6);
+}
+
+p, span, div, li, td, th, label, input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* Premium Headings with Playfair Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: -0.025em;
+  text-shadow: 0 1px 3px rgba(212, 175, 55, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-gold);
+}
+
+/* Button base styles */
+button, .btn {
+  background-color: var(--color-brand);
+  color: white;
+  border: 2px solid var(--color-brand);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-royal-gold);
+  border-color: var(--color-royal-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Royal Golden Font Styles */
+.royal-gold-text {
+  color: var(--color-royal-gold);
+  text-shadow: 0 1px 2px rgba(184, 134, 11, 0.3);
+  font-weight: 600;
+}
+
+.royal-gold-heading {
+  background: linear-gradient(135deg, var(--color-royal-gold) 0%, var(--color-dark-gold) 50%, var(--color-royal-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.royal-accent {
+  background: linear-gradient(135deg, var(--color-royal-gold) 0%, var(--color-light-gold) 100%);
+  color: var(--color-navy);
+  border: 2px solid var(--color-royal-gold);
+}
+
+.royal-gold-bg {
+  background: var(--color-royal-gold);
+  color: white;
+}
+
+.royal-gold-border {
+  border-color: var(--color-royal-gold);
+}
+
+.royal-shadow {
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+
+.royal-shadow-lg {
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.royal-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Enhanced Links with Royal Gold */
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(212, 175, 55, 0.1);
+}
+
+a:hover {
+  color: var(--color-royal-gold);
+  text-shadow: 0 1px 3px rgba(212, 175, 55, 0.4);
+}
+
+/* Typography helpers */
+.lead { 
+  color: var(--color-text); 
+  font-size: 1.125rem; 
+  line-height: 1.7; 
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { 
+  font-family: var(--font-serif); 
+  font-weight: 600; 
+  color: var(--color-brand); 
+}
+
+.content h2 { 
+  margin-top: 1.5rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.content p { 
+  margin-top: 0.75rem; 
+  color: var(--color-text); 
+}
+
+.content ul { 
+  margin-top: 0.75rem; 
+  padding-left: 1rem; 
+  display: grid; 
+  gap: 0.5rem; 
+}
+
+.content li { 
+  color: var(--color-text); 
 }

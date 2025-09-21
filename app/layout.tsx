@@ -1,27 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./(site)/components/Header";
 import Footer from "./(site)/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://propertyspecialist.in"),
   title: {
-    default: "Property Specialist — Real Estate in Delhi NCR & Vrindavan",
+    default: "Property Specialist — Premier Real Estate in Delhi NCR & Vrindavan",
     template: "%s | Property Specialist",
   },
   description:
-    "Residential, commercial, farmhouses, land deals, and project sales in Delhi NCR & Vrindavan.",
+    "Premier real estate advisory with 25+ years expertise. Residential, commercial, farmhouses, and land deals in Delhi NCR & Vrindavan.",
+  icons: {
+    icon: "/images/logo-no-bg.png",
+    apple: "/images/logo-no-bg.png",
+  },
   openGraph: {
     type: "website",
     title: "Property Specialist — Your Trusted Partner",
@@ -41,7 +34,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <head>
+            <link rel="icon" href="/images/logo-no-bg.png" type="image/png" />
+            <link rel="apple-touch-icon" href="/images/logo-no-bg.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased">
         <script
           suppressHydrationWarning
           type="application/ld+json"

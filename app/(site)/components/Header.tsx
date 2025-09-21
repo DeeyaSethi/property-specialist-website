@@ -2,21 +2,31 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
-      <div className="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="text-[--color-brand] font-semibold">Property Specialist</Link>
+      <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+          <Image 
+            src="/images/logo-no-bg.png" 
+            alt="Property Specialist Logo" 
+            width={40} 
+            height={40} 
+            className="object-contain"
+          />
+          <span className="text-[--color-brand] font-bold text-lg font-serif royal-gold-text">Property Specialist</span>
+        </Link>
         <nav className="hidden md:flex items-center gap-4 text-sm">
-          <a href="/about" className="hover:text-[--color-brand] font-medium">About Founder</a>
-          <a href="/developers" className="hover:text-[--color-brand]">Developers</a>
-          <a href="/investors" className="hover:text-[--color-brand]">Investors</a>
-          <a href="/buyers" className="hover:text-[--color-brand]">Buyers</a>
-          <a href="/finance" className="hover:text-[--color-brand]">Finance</a>
-          <a href="/podcast" className="hover:text-[--color-brand]">Podcast</a>
-          <a href="/contact" className="rounded-md bg-white border-2 border-[--color-brand] text-[--color-brand] hover:bg-[--color-brand] hover:text-white px-3 py-2 transition-colors">Contact</a>
+          <a href="/about" className="hover:royal-gold-text font-medium transition-colors">About Founder</a>
+          <a href="/developers" className="hover:royal-gold-text transition-colors">Developers</a>
+          <a href="/investors" className="hover:royal-gold-text transition-colors">Investors</a>
+          <a href="/buyers" className="hover:royal-gold-text transition-colors">Buyers</a>
+          <a href="/finance" className="hover:royal-gold-text transition-colors">Finance</a>
+          <a href="/podcast" className="hover:royal-gold-text transition-colors">Podcast</a>
+          <a href="/contact" className="rounded-md bg-white border-2 royal-gold-border royal-gold-text hover:royal-gold-bg hover:text-white px-3 py-2 transition-colors royal-shadow">Contact</a>
         </nav>
         <button
           aria-label="Menu"

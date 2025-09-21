@@ -17,8 +17,8 @@ export default function InvestorsPage() {
     <main className="font-sans">
       <Section bg="gradient" className="relative overflow-hidden py-8 md:py-12">
         <div className="absolute inset-0 -z-10">
-          <Image src="/images/hero-background.jpg" alt="" fill priority className="object-cover opacity-90" />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-white/10" />
+          <Image src="/images/investors.jpg" alt="" fill priority className="object-cover opacity-85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-[--color-navy]/20" />
         </div>
         <div className="grid lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
           <div className="text-center lg:text-left">
@@ -37,7 +37,7 @@ export default function InvestorsPage() {
           <div className="relative flex justify-center lg:justify-end animate-fade-in-up z-10">
             <div className="relative">
               <Image 
-                src="/images/hero-investors.jpg" 
+                src="/images/LuxuryFarmhouses.jpg" 
                 alt="Premium Investment Properties" 
                 width={500} 
                 height={400} 
@@ -97,20 +97,6 @@ export default function InvestorsPage() {
             <a href="https://wa.me/919910070102?text=Hi%20Property%20Specialist%2C%20I%27d%20like%20to%20discuss%20investment%20opportunities" target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" className="px-8 py-3">💬 WhatsApp Us</Button>
             </a>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <div className="grid md:grid-cols-2 gap-4 text-center md:text-left">
-              <div>
-                <h3 className="text-lg font-semibold mb-2 text-[--color-navy]">Direct Contact</h3>
-                <p className="text-gray-600">📧 manojsethi@propertyspecialist.com</p>
-                <p className="text-gray-600">📱 +91 99100 70102</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2 text-[--color-navy]">Investment Hours</h3>
-                <p className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
-                <p className="text-gray-600">Sunday: By Appointment</p>
-              </div>
-            </div>
           </div>
         </div>
       </Section>
