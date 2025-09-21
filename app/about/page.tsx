@@ -111,7 +111,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 font-serif">My Philosophy</h2>
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12">
             <p className="text-xl md:text-2xl leading-relaxed font-medium">
-              "Real estate is not about selling—it's about <span className="text-[--color-gold] font-bold">adding value</span>, providing <span className="text-[--color-gold] font-bold">clarity</span>, and ensuring clients make <span className="text-[--color-gold] font-bold">informed and confident</span> property choices."
+              &ldquo;Real estate is not about selling&mdash;it&rsquo;s about <span className="text-[--color-gold] font-bold">adding value</span>, providing <span className="text-[--color-gold] font-bold">clarity</span>, and ensuring clients make <span className="text-[--color-gold] font-bold">informed and confident</span> property choices.&rdquo;
             </p>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
             <span className="w-3 h-3 bg-[--color-brand] rounded-full animate-pulse"></span>
             Ready to Get Started?
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[--color-navy] mb-6 font-serif">Let's Discuss Your Property Goals</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[--color-navy] mb-6 font-serif">Let&rsquo;s Discuss Your Property Goals</h2>
           <p className="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
             Experience the difference of working with a data-driven, contribution-focused property specialist.
           </p>

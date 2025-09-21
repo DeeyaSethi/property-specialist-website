@@ -1,7 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./(site)/components/Header";
 import Footer from "./(site)/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://propertyspecialist.in"),
@@ -35,16 +48,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-            <link rel="icon" href="/images/logo-no-bg.png" type="image/png" />
-            <link rel="apple-touch-icon" href="/images/logo-no-bg.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="icon" href="/images/logo-no-bg.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo-no-bg.png" />
       </head>
-      <body className="antialiased">
+      <body className={`antialiased ${inter.variable} ${playfairDisplay.variable}`}>
         <script
           suppressHydrationWarning
           type="application/ld+json"
