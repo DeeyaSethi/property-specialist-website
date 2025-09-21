@@ -24,7 +24,7 @@ export async function POST(request: Request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY", // Get this from web3forms.com
+        access_key: "b62c83e5-531b-4b28-a1df-0d71ca63322a", // Web3Forms access key
         to_email: "gomail29@gmail.com",
         subject: `New Contact Form Submission - ${type || "General Inquiry"}`,
         from_name: name,
