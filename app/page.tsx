@@ -157,6 +157,7 @@ export default function Home() {
                   <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Inquiry</Button>
                 </a>
               </div>
+              <a href="/plots-in-sonipat" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Sonipat →</a>
             </div>
           </div>
         </div>
@@ -179,6 +180,7 @@ export default function Home() {
                   <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Connect</Button>
                 </a>
               </div>
+              <a href="/plots-in-gurgaon" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Gurgaon →</a>
             </div>
             <div className="order-1 md:order-2 relative h-96 rounded-3xl overflow-hidden shadow-2xl">
               <Image src="/images/gurgaon-skyline.png" alt="Gurgaon" fill className="object-cover" />
@@ -217,6 +219,7 @@ export default function Home() {
                   <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">Inquire on WhatsApp</Button>
                 </a>
               </div>
+              <a href="/farmland-near-vrindavan" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View farmland near Vrindavan →</a>
             </div>
           </div>
         </div>
