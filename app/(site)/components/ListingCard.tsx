@@ -16,9 +16,9 @@ export default function ListingCard({ l }: { l: Listing }) {
   return (
     <div className="premium-card rounded-xl overflow-hidden flex flex-col">
       <div className="relative h-44 bg-[--color-navy] flex items-center justify-center">
-        {l.photo ? (
+        {/^https?:\/\//i.test(l.photo) ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={l.photo} alt={l.title} className="h-full w-full object-cover" />
+          <img src={l.photo} alt={l.title} loading="lazy" className="h-full w-full object-cover" />
         ) : (
           <span className="text-white/80 text-sm font-semibold tracking-wide">{l.type || "Land"}</span>
         )}

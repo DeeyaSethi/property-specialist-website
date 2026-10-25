@@ -15,7 +15,7 @@ export default async function CityListings({ city, title }: { city: string; titl
         <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-6">{title}</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((l, i) => (
-            <ListingCard key={l.id || i} l={l} />
+            <ListingCard key={`${l.id}-${i}`} l={l} />
           ))}
         </div>
       </div>

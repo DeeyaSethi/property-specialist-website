@@ -41,7 +41,7 @@ export default function ListingsBrowser({ listings }: { listings: Listing[] }) {
       ) : null}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((l, i) => (
-          <ListingCard key={l.id || i} l={l} />
+          <ListingCard key={`${l.id}-${i}`} l={l} />
         ))}
       </div>
     </div>

@@ -100,7 +100,9 @@ export async function getListings(): Promise<Listing[]> {
   try {
     const res = await fetch(url, { next: { revalidate: 300 } });
     if (!res.ok) return [];
-    return rowsToListings(parseCsv(await res.text()));
+    // Strip a leading BOM (Google published CSVs sometimes include one).
+    const text = (await res.text()).replace(/^﻿/, "");
+    return rowsToListings(parseCsv(text));
   } catch {
     return [];
   }
