@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Section from "../(site)/components/ui/Section";
+import CityListings from "../(site)/components/CityListings";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Plots in Sonipat & Kundli",
@@ -14,7 +17,7 @@ const btnPrimary = `${btn} bg-[--color-navy] text-white shadow-lg hover:shadow-x
 const btnSecondary = `${btn} bg-white border-2 border-[--color-navy] text-[--color-navy] hover:bg-[--color-gold] hover:text-white hover:border-[--color-gold] shadow-md hover:shadow-lg`;
 const WA = "https://wa.me/919910070102?text=Hi%2C%20I%27m%20looking%20for%20plots%20in%20Sonipat";
 
-export default function PlotsInSonipatPage() {
+export default async function PlotsInSonipatPage() {
   return (
     <main className="font-sans">
       <Section bg="gradient" className="py-10 md:py-14">
@@ -33,6 +36,8 @@ export default function PlotsInSonipatPage() {
           </div>
         </div>
       </Section>
+
+      <CityListings city="Sonipat" title="Plots we have in Sonipat right now" />
 
       <Section className="border-t border-gray-200 bg-[--color-muted]">
         <div className="max-w-5xl mx-auto">
