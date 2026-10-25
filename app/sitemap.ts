@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/plots-in-sonipat`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/plots-in-gurgaon`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/farmland-near-vrindavan`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/listings`, changeFrequency: "daily", priority: 0.9 },
   ];
 }
 

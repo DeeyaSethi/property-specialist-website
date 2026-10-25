@@ -20,6 +20,7 @@ export default function Header() {
           <span className="text-[--color-brand] font-bold text-lg font-serif royal-gold-text">Property Specialist</span>
         </Link>
         <nav className="hidden md:flex items-center gap-4 text-sm">
+          <a href="/listings" className="hover:royal-gold-text font-medium transition-colors">Plots</a>
           <a href="/about" className="hover:royal-gold-text font-medium transition-colors">About Founder</a>
           <a href="/developers" className="hover:royal-gold-text transition-colors">Developers</a>
           <a href="/investors" className="hover:royal-gold-text transition-colors">Investors</a>
@@ -39,6 +40,7 @@ export default function Header() {
       {open ? (
         <div className="md:hidden border-t bg-white">
           <nav className="mx-auto max-w-6xl px-6 py-3 grid gap-2 text-sm">
+            <a href="/listings" className="py-2 font-medium">Plots</a>
             <a href="/about" className="py-2 font-medium">About Founder</a>
             <a href="/developers" className="py-2">Developers</a>
             <a href="/investors" className="py-2">Investors</a>
