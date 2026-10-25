@@ -16,7 +16,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://wa.me/919910070102" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors border-l border-white/20 pl-4">
+          <a href="https://wa.me/919910070102?text=Hi%2C%20I%20saw%20propertyspecialist.in%20and%20want%20to%20talk%20about%20plots" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors border-l border-white/20 pl-4">
              WhatsApp Connect
           </a>
         </div>
