@@ -44,7 +44,7 @@ export default function Home() {
               Residential Plots & Farmland in Vrindavan, Sonipat & Gurgaon
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl lg:max-w-none leading-relaxed">
-              25+ years of trusted, title-checked land & farmhouse deals across Delhi NCR & Vrindavan.
+              Straight answers on price, approvals and what&apos;s actually worth buying. We check the paperwork and visit the site with you. Just call or WhatsApp.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a href="#contact" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -109,7 +109,7 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-lg"
                 />
                 <div className="absolute -top-2 -right-2 bg-[#d4af37] text-white px-3 py-1 rounded-full text-xs font-bold shadow-2xl border-4 border-white" style={{backgroundColor: '#d4af37', color: 'white', zIndex: 20}}>
-                  25+ Years
+                  28 Years
                 </div>
               </div>
             </div>
@@ -141,13 +141,13 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-3xl font-bold font-serif">Sonipat</h3>
-                <p className="text-lg opacity-90">Upcoming Luxury living</p>
+                <p className="text-lg opacity-90">Plots & farmland</p>
               </div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Sonipat: The Emerging Growth Hub</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland in Sonipat</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Premium residential plots and luxury farmhouses in the heart of Haryana&apos;s most promising corridor. Perfect for high-appreciation investments.
+                Most buyers here are weighing plots around Kundli, NH-44, the KMP Expressway and the new university belt. Tell us your budget and how you want to use it, and we&apos;ll show you which pockets are worth it and which to avoid. We check DTCP approval and clear title before recommending anything, and we take you to the site.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
@@ -167,9 +167,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Gurgaon: The Millennium City</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmhouse land in Gurgaon</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Sky-high luxury. Elite residential towers and world-class commercial spaces in Cyber City, Golf Course Road, and beyond.
+                We work the plot and farmhouse side of Gurgaon. Think New Gurgaon sectors, the Dwarka Expressway belt, and farmhouse land towards Sohna and Pataudi. Tell us how you want to use it and we&apos;ll give you an honest read on what your budget gets, and what to check before you pay.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-3xl font-bold font-serif">Gurgaon</h3>
-                <p className="text-lg opacity-90">Premier Lifestyle & Business</p>
+                <p className="text-lg opacity-90">Plots & farmhouse land</p>
               </div>
             </div>
           </div>
@@ -201,13 +201,13 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-3xl font-bold font-serif">Vrindavan</h3>
-                <p className="text-lg opacity-90">Spiritual & Serene Retreats</p>
+                <p className="text-lg opacity-90">Plots & farmland</p>
               </div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Vrindavan: Divinity & Design</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland near Vrindavan</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Peaceful retreats and residential plots in the spiritual heart of India. Modern amenities meets traditional serenity.
+                Plots and farmland around Vrindavan and Mathura, close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here changes hands without clean approvals, so we check MVDA approval and title first, and walk the site with you before you decide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
@@ -313,7 +313,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 font-serif">About Manoj Sethi</h3>
-              <p className="text-white/90 text-sm mb-4 flex-1">Meet our founder with 25+ years of real estate expertise and proven track record.</p>
+              <p className="text-white/90 text-sm mb-4 flex-1">Meet our founder with 28 years of real estate expertise and proven track record.</p>
               <div className="flex items-center text-white font-semibold group-hover:text-white/90 transition-colors">
                 <span>Meet The Founder</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -391,15 +391,15 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Why Choose Property Specialist</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8">
-            Three decades of excellence in real estate advisory and project management
+            28 years of excellence in real estate advisory and project management
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">25+</span>
+                <span className="text-white text-xl font-bold font-serif">28</span>
               </div>
               <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years Experience</h3>
-              <p className="text-gray-600 text-sm">Three decades of successful project execution with industry-leading ROI delivery.</p>
+              <p className="text-gray-600 text-sm">28 years of successful project execution with industry-leading ROI delivery.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -446,7 +446,7 @@ export default function Home() {
                 {
                   id: "experience",
                   question: "What makes Property Specialist different?",
-                  answer: "With 25+ years of expertise, proven systems, and a client-first approach, we deliver comprehensive real estate solutions with transparency and results.",
+                  answer: "With 28 years of expertise, proven systems, and a client-first approach, we deliver comprehensive real estate solutions with transparency and results.",
                 },
               ]}
             />

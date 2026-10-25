@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div style={{color: 'white'}} className="font-medium">© {new Date().getFullYear()} Property Specialist. All rights reserved.</div>
           <div className="mt-2 sm:mt-0" style={{color: 'white'}}>
-            <span style={{color: '#d4af37'}} className="font-bold royal-glow">25+ Years</span> of Real Estate Excellence
+            <span style={{color: '#d4af37'}} className="font-bold royal-glow">28 Years</span> of Real Estate Excellence
           </div>
         </div>
       </div>

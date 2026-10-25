@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Property Specialist",
   },
   description:
-    "Buy verified residential plots, farmland & farmhouses in Vrindavan, Sonipat and Gurgaon. 25+ years' expertise with title-checked (MVDA / DTCP / RERA) deals. Book a free site visit on WhatsApp.",
+    "Plots and farmland in Vrindavan, Sonipat and Gurgaon. 28 years helping buyers find the right land. We check approvals and title before we recommend it, and we visit the site with you. Call or WhatsApp.",
   icons: {
     icon: "/images/logo-no-bg.png",
     apple: "/images/logo-no-bg.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Plots & Farmland in Vrindavan, Sonipat & Gurgaon | Property Specialist",
     description:
-      "Verified residential plots, farmland & farmhouses in Vrindavan, Sonipat and Gurgaon. 25+ years' expertise. Free site visit on WhatsApp.",
+      "Plots and farmland in Vrindavan, Sonipat and Gurgaon. 28 years' experience. We check approvals and title, and visit the site with you. Call or WhatsApp.",
     url: "https://propertyspecialist.in",
     siteName: "Property Specialist",
   },
