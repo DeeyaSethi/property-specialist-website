@@ -6,6 +6,22 @@ import Accordion from "./(site)/components/ui/Accordion";
 export default function Home() {
   return (
     <main className="font-sans">
+      {/* Search/Contact Banner - Homepage Only */}
+      <div className="bg-[--color-navy] text-white py-2 px-6 flex justify-between items-center text-sm md:text-base border-b border-white/10 royal-shadow">
+        <div className="flex items-center gap-2">
+          <span className="hidden md:inline font-medium opacity-90">Direct Inquiry:</span>
+          <a href="tel:+919910070102" className="flex items-center gap-2 font-bold hover:text-[--color-gold] transition-colors">
+            <span className="p-1 bg-white/10 rounded-full">📞</span>
+            9910070102
+          </a>
+        </div>
+        <div className="flex items-center gap-4">
+          <a href="https://wa.me/919910070102" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors border-l border-white/20 pl-4">
+             WhatsApp Connect
+          </a>
+        </div>
+      </div>
+
       <Section bg="gradient" className="relative overflow-hidden py-8 md:py-12">
         <div className="absolute inset-0 -z-10">
           <Image src="/images/DelhiNCRSkyline.jpg" alt="Delhi NCR Skyline" fill priority className="object-cover opacity-85" />
@@ -24,8 +40,11 @@ export default function Home() {
                 priority
               />
             </div>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-navy] font-serif mb-3 leading-tight">
+              Residential Plots & Farmland in Vrindavan, Sonipat & Gurgaon
+            </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl lg:max-w-none leading-relaxed">
-              Premier real estate advisory in Delhi NCR & Vrindavan with 25+ years of proven expertise
+              25+ years of trusted, title-checked land & farmhouse deals across Delhi NCR & Vrindavan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a href="#contact" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -38,6 +57,21 @@ export default function Home() {
                   Explore Opportunities
                 </Button>
               </a>
+            </div>
+
+            <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <p className="text-sm font-bold text-white uppercase tracking-widest mb-4 opacity-100" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Quick Inquiry by Location:</p>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <a href="#sonipat" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Sonipat
+                </a>
+                <a href="#gurgaon" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Gurgaon
+                </a>
+                <a href="#vrindavan" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Vrindavan
+                </a>
+              </div>
             </div>
           </div>
           
@@ -91,6 +125,96 @@ export default function Home() {
                   <Button className="px-10 py-4 text-lg royal-shadow hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 bg-[--color-navy] text-white hover:bg-[--color-gold] border-2 border-[--color-navy] hover:border-[--color-gold] font-bold">
                     Learn About Manoj →
                   </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Sonipat Section */}
+      <Section id="sonipat" className="bg-[#f8f9fa] border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/sonipat-farmhouse.png" alt="Sonipat" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Sonipat</h3>
+                <p className="text-lg opacity-90">Upcoming Luxury living</p>
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Sonipat: The Emerging Growth Hub</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Premium residential plots and luxury farmhouses in the heart of Haryana&apos;s most promising corridor. Perfect for high-appreciation investments.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Call For Details</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Sonipat" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Inquiry</Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Gurgaon Section */}
+      <Section id="gurgaon" className="bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1 text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Gurgaon: The Millennium City</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Sky-high luxury. Elite residential towers and world-class commercial spaces in Cyber City, Golf Course Road, and beyond.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Inquire Now</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Gurgaon" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Connect</Button>
+                </a>
+              </div>
+            </div>
+            <div className="order-1 md:order-2 relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/gurgaon-skyline.png" alt="Gurgaon" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Gurgaon</h3>
+                <p className="text-lg opacity-90">Premier Lifestyle & Business</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Vrindavan Section */}
+      <Section id="vrindavan" className="bg-[#fdfbf7] border-t border-gray-100 pb-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/vrindavan-luxury.png" alt="Vrindavan" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Vrindavan</h3>
+                <p className="text-lg opacity-90">Spiritual & Serene Retreats</p>
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Vrindavan: Divinity & Design</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Peaceful retreats and residential plots in the spiritual heart of India. Modern amenities meets traditional serenity.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Get Information</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Vrindavan" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">Inquire on WhatsApp</Button>
                 </a>
               </div>
             </div>
