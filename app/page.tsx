@@ -117,7 +117,7 @@ export default function Home() {
             {/* Content */}
             <div className="text-center">
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
-                A leading authority in real estate with <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years of experience</span> and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crores</span> in successful deals. Providing research-driven insights and strategic guidance across Delhi NCR & Vrindavan.
+                <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years</span> in property and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and his job is to tell you the truth about a plot before you buy it.
               </p>
               
               <div className="flex justify-center">
@@ -226,7 +226,7 @@ export default function Home() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Our Services</h2>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
-            Comprehensive real estate solutions tailored for developers, investors, and home buyers
+            What we help with, whether you&apos;re buying land to live on, to invest, or to build
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -237,7 +237,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">For Developers</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Launch and scale projects with proven sales systems and ROI-focused execution.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Sales and marketing help for developers launching plotted and housing projects.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -252,7 +252,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Investors & HNIs</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Curated investment opportunities with comprehensive due diligence.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Land picked for investors, with approvals and title checked first.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Home Buyers</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Find your perfect property in Delhi NCR and Vrindavan with expert guidance.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Help finding and buying a plot or home across Delhi NCR and Vrindavan.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -282,7 +282,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Finance & Loans</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Complete financing solutions including home loans and project funding.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Home loans, loan against property, and project funding.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -313,7 +313,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 font-serif">About Manoj Sethi</h3>
-              <p className="text-white/90 text-sm mb-4 flex-1">Meet our founder with 28 years of real estate expertise and proven track record.</p>
+              <p className="text-white/90 text-sm mb-4 flex-1">Meet Manoj Sethi, 28 years in real estate.</p>
               <div className="flex items-center text-white font-semibold group-hover:text-white/90 transition-colors">
                 <span>Meet The Founder</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -333,7 +333,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[--color-navy] mb-4 font-serif">Property Portfolio</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Discover our comprehensive range of premium properties across Delhi NCR & Vrindavan
+              The kinds of property we handle across Delhi NCR and Vrindavan
             </p>
           </div>
           
@@ -391,29 +391,29 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Why Choose Property Specialist</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8">
-            28 years of excellence in real estate advisory and project management
+            28 years in the Delhi NCR, Sonipat and Vrindavan land market, and straight with you at every step
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white text-xl font-bold font-serif">28</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years Experience</h3>
-              <p className="text-gray-600 text-sm">28 years of successful project execution with industry-leading ROI delivery.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in land</h3>
+              <p className="text-gray-600 text-sm">Buying and selling plots and farmland across Delhi NCR, Sonipat and Vrindavan.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">500+</span>
+                <span className="text-white text-xl font-bold font-serif">3</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Projects Completed</h3>
-              <p className="text-gray-600 text-sm">Hand-selected investment opportunities with comprehensive due diligence and market analysis.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Markets we know</h3>
+              <p className="text-gray-600 text-sm">Vrindavan, Sonipat and Gurgaon. We stick to the areas we know well instead of claiming everywhere.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">100%</span>
+                <span className="text-white text-xl font-bold font-serif">✓</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Client Satisfaction</h3>
-              <p className="text-gray-600 text-sm">Personalized guidance and transparent processes ensuring your real estate success.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Checked first</h3>
+              <p className="text-gray-600 text-sm">We verify approvals and clear title before recommending a plot, and we visit the site with you.</p>
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@ export default function Home() {
                 {
                   id: "experience",
                   question: "What makes Property Specialist different?",
-                  answer: "With 28 years of expertise, proven systems, and a client-first approach, we deliver comprehensive real estate solutions with transparency and results.",
+                  answer: "28 years in these markets, and we check the approvals and title before we recommend a plot. No pressure, and no surprises later.",
                 },
               ]}
             />
@@ -460,9 +460,9 @@ export default function Home() {
             <span className="w-3 h-3 bg-[--color-brand] rounded-full animate-pulse"></span>
             Ready to Get Started?
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[--color-navy] font-serif">Transform Your Real Estate Journey</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[--color-navy] font-serif">Want to see some plots?</h2>
           <p className="text-base md:text-lg mb-8 text-gray-700 leading-relaxed max-w-2xl mx-auto">
-            Connect with our experts today and discover premium real estate opportunities tailored for you
+            Call or WhatsApp and tell us what you&apos;re looking for. We&apos;ll get back to you quickly.
           </p>
           
           <div className="grid sm:grid-cols-2 gap-6 max-w-lg mx-auto mb-12">
