@@ -17,7 +17,7 @@ export default function Footer() {
               />
               <div style={{color: 'white'}} className="font-bold text-xl font-serif">Property Specialist</div>
             </div>
-            <div style={{color: 'white'}} className="font-medium">Premier Real Estate Advisory</div>
+            <div style={{color: 'white'}} className="font-medium">Plots & farmland in Delhi NCR, Sonipat & Vrindavan</div>
             <div style={{color: 'white'}} className="font-medium">Delhi NCR & Vrindavan</div>
             <a 
               style={{color: '#d4af37'}} 
@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div style={{color: 'white'}} className="font-medium">© {new Date().getFullYear()} Property Specialist. All rights reserved.</div>
           <div className="mt-2 sm:mt-0" style={{color: 'white'}}>
-            <span style={{color: '#d4af37'}} className="font-bold royal-glow">25+ Years</span> of Real Estate Excellence
+            <span style={{color: '#d4af37'}} className="font-bold royal-glow">28 Years</span> buying and selling land
           </div>
         </div>
       </div>

@@ -6,6 +6,22 @@ import Accordion from "./(site)/components/ui/Accordion";
 export default function Home() {
   return (
     <main className="font-sans">
+      {/* Search/Contact Banner - Homepage Only */}
+      <div className="bg-[--color-navy] text-white py-2 px-6 flex justify-between items-center text-sm md:text-base border-b border-white/10 royal-shadow">
+        <div className="flex items-center gap-2">
+          <span className="hidden md:inline font-medium opacity-90">Direct Inquiry:</span>
+          <a href="tel:+919910070102" className="flex items-center gap-2 font-bold hover:text-[--color-gold] transition-colors">
+            <span className="p-1 bg-white/10 rounded-full">📞</span>
+            9910070102
+          </a>
+        </div>
+        <div className="flex items-center gap-4">
+          <a href="https://wa.me/919910070102?text=Hi%2C%20I%20saw%20propertyspecialist.in%20and%20want%20to%20talk%20about%20plots" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors border-l border-white/20 pl-4">
+             WhatsApp Connect
+          </a>
+        </div>
+      </div>
+
       <Section bg="gradient" className="relative overflow-hidden py-8 md:py-12">
         <div className="absolute inset-0 -z-10">
           <Image src="/images/DelhiNCRSkyline.jpg" alt="Delhi NCR Skyline" fill priority className="object-cover opacity-85" />
@@ -24,8 +40,11 @@ export default function Home() {
                 priority
               />
             </div>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-navy] font-serif mb-3 leading-tight">
+              Residential Plots & Farmland in Vrindavan, Sonipat & Gurgaon
+            </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl lg:max-w-none leading-relaxed">
-              Premier real estate advisory in Delhi NCR & Vrindavan with 25+ years of proven expertise
+              Straight answers on price, approvals and what&apos;s actually worth buying. We check the paperwork and visit the site with you. Just call or WhatsApp.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a href="#contact" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -38,6 +57,21 @@ export default function Home() {
                   Explore Opportunities
                 </Button>
               </a>
+            </div>
+
+            <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <p className="text-sm font-bold text-white uppercase tracking-widest mb-4 opacity-100" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Quick Inquiry by Location:</p>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <a href="#sonipat" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Sonipat
+                </a>
+                <a href="#gurgaon" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Gurgaon
+                </a>
+                <a href="#vrindavan" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                   Vrindavan
+                </a>
+              </div>
             </div>
           </div>
           
@@ -75,7 +109,7 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-lg"
                 />
                 <div className="absolute -top-2 -right-2 bg-[#d4af37] text-white px-3 py-1 rounded-full text-xs font-bold shadow-2xl border-4 border-white" style={{backgroundColor: '#d4af37', color: 'white', zIndex: 20}}>
-                  25+ Years
+                  28 Years
                 </div>
               </div>
             </div>
@@ -83,7 +117,7 @@ export default function Home() {
             {/* Content */}
             <div className="text-center">
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
-                A leading authority in real estate with <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years of experience</span> and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crores</span> in successful deals. Providing research-driven insights and strategic guidance across Delhi NCR & Vrindavan.
+                <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years</span> in property and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and his job is to tell you the truth about a plot before you buy it.
               </p>
               
               <div className="flex justify-center">
@@ -98,11 +132,104 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* Sonipat Section */}
+      <Section id="sonipat" className="bg-[#f8f9fa] border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/sonipat-farmhouse.png" alt="Sonipat" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Sonipat</h3>
+                <p className="text-lg opacity-90">Plots & farmland</p>
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland in Sonipat</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Most buyers here are weighing plots around Kundli, NH-44, the KMP Expressway and the new university belt. Tell us your budget and how you want to use it, and we&apos;ll show you which pockets are worth it and which to avoid. We check DTCP approval and clear title before recommending anything, and we take you to the site.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Call For Details</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Sonipat" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Inquiry</Button>
+                </a>
+              </div>
+              <a href="/plots-in-sonipat" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Sonipat →</a>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Gurgaon Section */}
+      <Section id="gurgaon" className="bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1 text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmhouse land in Gurgaon</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                We work the plot and farmhouse side of Gurgaon. Think New Gurgaon sectors, the Dwarka Expressway belt, and farmhouse land towards Sohna and Pataudi. Tell us how you want to use it and we&apos;ll give you an honest read on what your budget gets, and what to check before you pay.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Inquire Now</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Gurgaon" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Connect</Button>
+                </a>
+              </div>
+              <a href="/plots-in-gurgaon" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Gurgaon →</a>
+            </div>
+            <div className="order-1 md:order-2 relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/gurgaon-skyline.png" alt="Gurgaon" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Gurgaon</h3>
+                <p className="text-lg opacity-90">Plots & farmhouse land</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Vrindavan Section */}
+      <Section id="vrindavan" className="bg-[#fdfbf7] border-t border-gray-100 pb-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <Image src="/images/vrindavan-luxury.png" alt="Vrindavan" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-3xl font-bold font-serif">Vrindavan</h3>
+                <p className="text-lg opacity-90">Plots & farmland</p>
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland near Vrindavan</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Plots and farmland around Vrindavan and Mathura, close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here changes hands without clean approvals, so we check MVDA approval and title first, and walk the site with you before you decide.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:+919910070102">
+                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Get Information</Button>
+                </a>
+                <a href="https://wa.me/919910070102?text=I'm interested in properties in Vrindavan" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">Inquire on WhatsApp</Button>
+                </a>
+              </div>
+              <a href="/farmland-near-vrindavan" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View farmland near Vrindavan →</a>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       <Section id="sections" className="border-t border-gray-200 bg-[--color-muted]">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Our Services</h2>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
-            Comprehensive real estate solutions tailored for developers, investors, and home buyers
+            What we help with, whether you&apos;re buying land to live on, to invest, or to build
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -113,7 +240,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">For Developers</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Launch and scale projects with proven sales systems and ROI-focused execution.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Sales and marketing help for developers launching plotted and housing projects.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -128,7 +255,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Investors & HNIs</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Curated investment opportunities with comprehensive due diligence.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Land picked for investors, with approvals and title checked first.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -143,7 +270,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Home Buyers</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Find your perfect property in Delhi NCR and Vrindavan with expert guidance.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Help finding and buying a plot or home across Delhi NCR and Vrindavan.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -158,7 +285,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Finance & Loans</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Complete financing solutions including home loans and project funding.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Home loans, loan against property, and project funding.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -189,7 +316,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 font-serif">About Manoj Sethi</h3>
-              <p className="text-white/90 text-sm mb-4 flex-1">Meet our founder with 25+ years of real estate expertise and proven track record.</p>
+              <p className="text-white/90 text-sm mb-4 flex-1">Meet Manoj Sethi, 28 years in real estate.</p>
               <div className="flex items-center text-white font-semibold group-hover:text-white/90 transition-colors">
                 <span>Meet The Founder</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -209,7 +336,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[--color-navy] mb-4 font-serif">Property Portfolio</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Discover our comprehensive range of premium properties across Delhi NCR & Vrindavan
+              The kinds of property we handle across Delhi NCR and Vrindavan
             </p>
           </div>
           
@@ -267,29 +394,29 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Why Choose Property Specialist</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8">
-            Three decades of excellence in real estate advisory and project management
+            28 years in the Delhi NCR, Sonipat and Vrindavan land market, and straight with you at every step
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">25+</span>
+                <span className="text-white text-xl font-bold font-serif">28</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years Experience</h3>
-              <p className="text-gray-600 text-sm">Three decades of successful project execution with industry-leading ROI delivery.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in land</h3>
+              <p className="text-gray-600 text-sm">Buying and selling plots and farmland across Delhi NCR, Sonipat and Vrindavan.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">500+</span>
+                <span className="text-white text-xl font-bold font-serif">3</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Projects Completed</h3>
-              <p className="text-gray-600 text-sm">Hand-selected investment opportunities with comprehensive due diligence and market analysis.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Markets we know</h3>
+              <p className="text-gray-600 text-sm">Vrindavan, Sonipat and Gurgaon. We stick to the areas we know well instead of claiming everywhere.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">100%</span>
+                <span className="text-white text-xl font-bold font-serif">✓</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Client Satisfaction</h3>
-              <p className="text-gray-600 text-sm">Personalized guidance and transparent processes ensuring your real estate success.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Checked first</h3>
+              <p className="text-gray-600 text-sm">We verify approvals and clear title before recommending a plot, and we visit the site with you.</p>
             </div>
           </div>
         </div>
@@ -322,7 +449,7 @@ export default function Home() {
                 {
                   id: "experience",
                   question: "What makes Property Specialist different?",
-                  answer: "With 25+ years of expertise, proven systems, and a client-first approach, we deliver comprehensive real estate solutions with transparency and results.",
+                  answer: "28 years in these markets, and we check the approvals and title before we recommend a plot. No pressure, and no surprises later.",
                 },
               ]}
             />
@@ -336,9 +463,9 @@ export default function Home() {
             <span className="w-3 h-3 bg-[--color-brand] rounded-full animate-pulse"></span>
             Ready to Get Started?
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[--color-navy] font-serif">Transform Your Real Estate Journey</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[--color-navy] font-serif">Want to see some plots?</h2>
           <p className="text-base md:text-lg mb-8 text-gray-700 leading-relaxed max-w-2xl mx-auto">
-            Connect with our experts today and discover premium real estate opportunities tailored for you
+            Call or WhatsApp and tell us what you&apos;re looking for. We&apos;ll get back to you quickly.
           </p>
           
           <div className="grid sm:grid-cols-2 gap-6 max-w-lg mx-auto mb-12">

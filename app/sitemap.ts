@@ -11,6 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/finance`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/podcast`, changeFrequency: "weekly", priority: 0.6 },
     { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/plots-in-sonipat`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/plots-in-gurgaon`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/farmland-near-vrindavan`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/listings`, changeFrequency: "daily", priority: 0.9 },
   ];
 }
 
