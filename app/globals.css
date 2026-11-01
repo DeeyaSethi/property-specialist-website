@@ -138,13 +138,14 @@
 .premium-card {
   background: white;
   border: 1px solid rgba(30, 58, 138, 0.1);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .premium-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-color: rgba(197, 168, 128, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 24, 40, 0.08);
+  border-color: rgba(197, 168, 128, 0.4);
 }
 
 /* Professional Real Estate Typography */
@@ -169,20 +170,26 @@ p, span, div, li, td, th, label, input, textarea, select {
   font-family: var(--font-sans);
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: var(--color-text);
-}
+/* Base element defaults live in @layer base so Tailwind text-color
+   utilities (e.g. text-white on a dark card or navy button) win over them */
+@layer base {
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    /* no color here: inherit from context so text on dark sections stays
+       readable; body sets the default dark color, utilities override */
+  }
 
-/* Premium Headings with Playfair Display */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  color: var(--color-brand);
-  letter-spacing: -0.025em;
-  text-shadow: 0 1px 3px rgba(212, 175, 55, 0.3);
+  /* Premium Headings with Playfair Display */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+    /* color inherited from context (text-(--color-navy) utilities set navy;
+       dark sections inherit white) so headings are never navy-on-navy */
+  }
 }
 
 h1 {
@@ -227,19 +234,9 @@ h6 {
   font-weight: 600;
 }
 
-/* Links */
-a {
-  color: var(--color-brand);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--color-gold);
-}
-
-/* Button base styles */
-button, .btn {
+/* Button base styles — scoped to .btn only, so component buttons,
+   the FAQ accordion toggle and filter chips keep their own styles */
+.btn {
   background-color: var(--color-brand);
   color: white;
   border: 2px solid var(--color-brand);
@@ -251,7 +248,7 @@ button, .btn {
   cursor: pointer;
 }
 
-button:hover, .btn:hover {
+.btn:hover {
   background-color: var(--color-royal-gold);
   border-color: var(--color-royal-gold);
   transform: translateY(-2px);
@@ -301,17 +298,17 @@ button:hover, .btn:hover {
   text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
-/* Enhanced Links with Royal Gold */
-a {
-  color: var(--color-brand);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-shadow: 0 1px 2px rgba(212, 175, 55, 0.1);
-}
+/* Links — in @layer base so text-color utilities (text-white, etc.) win */
+@layer base {
+  a {
+    color: var(--color-brand);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
 
-a:hover {
-  color: var(--color-royal-gold);
-  text-shadow: 0 1px 3px rgba(212, 175, 55, 0.4);
+  a:hover {
+    color: var(--color-royal-gold);
+  }
 }
 
 /* Typography helpers */

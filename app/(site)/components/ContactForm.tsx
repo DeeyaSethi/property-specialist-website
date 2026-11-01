@@ -4,11 +4,11 @@ import { useState } from "react";
 import Button from "./ui/Button";
 
 const btn =
-  "inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[--color-gold] focus:ring-offset-2";
-const btnPrimary = `${btn} bg-[--color-navy] text-white shadow-lg hover:shadow-xl hover:bg-[--color-gold] hover:scale-105`;
-const btnSecondary = `${btn} bg-white border-2 border-[--color-navy] text-[--color-navy] hover:bg-[--color-gold] hover:text-white hover:border-[--color-gold] shadow-md hover:shadow-lg`;
+  "inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-(--color-gold) focus:ring-offset-2";
+const btnPrimary = `${btn} bg-(--color-navy) text-white shadow-lg hover:shadow-xl hover:bg-(--color-gold) hover:scale-105`;
+const btnSecondary = `${btn} bg-white border-2 border-(--color-navy) text-(--color-navy) hover:bg-(--color-gold) hover:text-white hover:border-(--color-gold) shadow-md hover:shadow-lg`;
 const inputCls =
-  "border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[--color-brand]";
+  "border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-(--color-brand)";
 const WA = "https://wa.me/919910070102?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20a%20plot";
 
 export default function ContactForm() {
@@ -40,8 +40,8 @@ export default function ContactForm() {
 
   if (status === "ok") {
     return (
-      <div className="rounded-xl border-2 border-[--color-navy] bg-white p-8 text-center">
-        <h3 className="text-xl font-bold text-[--color-navy] mb-2">Thanks, we have your details.</h3>
+      <div className="rounded-xl border-2 border-(--color-navy) bg-white p-8 text-center">
+        <h3 className="text-xl font-bold text-(--color-navy) mb-2">Thanks, we have your details.</h3>
         <p className="text-gray-700 mb-6">We will call or message you back shortly. If it is urgent, reach us directly.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:+919910070102" className={btnPrimary}>Call 99100 70102</a>

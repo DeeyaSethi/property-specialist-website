@@ -30,8 +30,8 @@ export default function ListingsBrowser({ listings }: { listings: Listing[] }) {
               onClick={() => setActive(c)}
               className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
                 active === c
-                  ? "bg-[--color-navy] text-white"
-                  : "bg-white border border-gray-200 text-[--color-navy] hover:border-[--color-gold]"
+                  ? "bg-(--color-navy) text-white"
+                  : "bg-white border border-gray-200 text-(--color-navy) hover:border-(--color-gold)"
               }`}
             >
               {c}

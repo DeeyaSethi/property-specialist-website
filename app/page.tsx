@@ -7,16 +7,16 @@ export default function Home() {
   return (
     <main className="font-sans">
       {/* Search/Contact Banner - Homepage Only */}
-      <div className="bg-[--color-navy] text-white py-2 px-6 flex justify-between items-center text-sm md:text-base border-b border-white/10 royal-shadow">
+      <div className="bg-(--color-navy) text-white py-2 px-6 flex justify-between items-center text-sm md:text-base border-b border-white/10 royal-shadow">
         <div className="flex items-center gap-2">
-          <span className="hidden md:inline font-medium opacity-90">Direct Inquiry:</span>
-          <a href="tel:+919910070102" className="flex items-center gap-2 font-bold hover:text-[--color-gold] transition-colors">
+          <span className="hidden md:inline font-medium opacity-90">Call Manoj directly:</span>
+          <a href="tel:+919910070102" className="flex items-center gap-2 font-bold text-white hover:text-(--color-gold) transition-colors">
             9910070102
           </a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://wa.me/919910070102?text=Hi%2C%20I%20saw%20propertyspecialist.in%20and%20want%20to%20talk%20about%20plots" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors border-l border-white/20 pl-4">
-             WhatsApp Connect
+          <a href="https://wa.me/919910070102?text=Hi%2C%20I%20saw%20propertyspecialist.in%20and%20want%20to%20talk%20about%20plots" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-medium text-white hover:text-(--color-gold) transition-colors border-l border-white/20 pl-4">
+             WhatsApp us
           </a>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Home() {
       <Section bg="gradient" className="relative overflow-hidden py-8 md:py-12">
         <div className="absolute inset-0 -z-10">
           <Image src="/images/DelhiNCRSkyline.jpg" alt="Delhi NCR Skyline" fill priority className="object-cover opacity-85" />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-[--color-navy]/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-(--color-navy)/20" />
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
@@ -39,7 +39,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-navy] font-serif mb-3 leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-(--color-navy) font-serif mb-3 leading-tight">
               Residential Plots & Farmland in Vrindavan, Sonipat & Gurgaon
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl lg:max-w-none leading-relaxed">
@@ -47,27 +47,27 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a href="#contact" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-                <Button className="px-10 py-4 text-lg royal-shadow hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 royal-gold-bg border-2 royal-gold-border">
+                <Button className="px-10 py-4 text-lg">
                   Talk to us
                 </Button>
               </a>
               <a href="#sections" className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-                <Button variant="secondary" className="px-10 py-4 text-lg shadow-md hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 border-2 royal-gold-border hover:royal-gold-bg hover:text-white">
+                <Button variant="secondary" className="px-10 py-4 text-lg">
                   Browse by location
                 </Button>
               </a>
             </div>
 
             <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <p className="text-sm font-bold text-white uppercase tracking-widest mb-4 opacity-100" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Where we work:</p>
+              <p className="text-sm font-bold text-(--color-navy) uppercase tracking-widest mb-4">Where we work:</p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <a href="#sonipat" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                <a href="#sonipat" className="px-6 py-2 rounded-full border-2 border-(--color-navy) text-(--color-navy) font-bold bg-white/80 hover:bg-(--color-navy) hover:text-white transition-all duration-300 text-sm">
                    Sonipat
                 </a>
-                <a href="#gurgaon" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                <a href="#gurgaon" className="px-6 py-2 rounded-full border-2 border-(--color-navy) text-(--color-navy) font-bold bg-white/80 hover:bg-(--color-navy) hover:text-white transition-all duration-300 text-sm">
                    Gurgaon
                 </a>
-                <a href="#vrindavan" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
+                <a href="#vrindavan" className="px-6 py-2 rounded-full border-2 border-(--color-navy) text-(--color-navy) font-bold bg-white/80 hover:bg-(--color-navy) hover:text-white transition-all duration-300 text-sm">
                    Vrindavan
                 </a>
               </div>
@@ -83,7 +83,7 @@ export default function Home() {
                 height={400} 
                 className="rounded-2xl shadow-2xl opacity-100 hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[--color-navy]/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-(--color-navy)/20 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>
@@ -94,8 +94,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex flex-col items-center gap-8">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[--color-navy] mb-0 font-serif leading-tight">
-              Meet <span className="text-[--color-gold]">Manoj Sethi</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-(--color-navy) mb-0 font-serif leading-tight">
+              Meet <span className="text-(--color-gold)">Manoj Sethi</span>
             </h2>
             
             {/* Profile Image */}
@@ -116,13 +116,13 @@ export default function Home() {
             {/* Content */}
             <div className="text-center">
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
-                <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">16 years</span> in real estate and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and his job is to tell you the truth about a plot before you buy it.
+                <span className="font-bold text-(--color-navy) bg-(--color-gold)/10 px-2 py-1 rounded">16 years</span> in real estate and <span className="font-bold text-(--color-gold) bg-(--color-navy)/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and he will tell you what a plot is really worth before you buy it.
               </p>
               
               <div className="flex justify-center">
                 <a href="/about">
-                  <Button className="px-10 py-4 text-lg royal-shadow hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 bg-[--color-navy] text-white hover:bg-[--color-gold] border-2 border-[--color-navy] hover:border-[--color-gold] font-bold">
-                    Learn About Manoj →
+                  <Button className="px-10 py-4 text-lg font-bold">
+                    More about Manoj →
                   </Button>
                 </a>
               </div>
@@ -139,24 +139,24 @@ export default function Home() {
               <Image src="/images/sonipat-farmhouse.png" alt="Sonipat" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-3xl font-bold font-serif">Sonipat</h3>
-                <p className="text-lg opacity-90">Plots & farmland</p>
+                <h3 className="text-3xl font-bold font-serif text-white">Sonipat</h3>
+                <p className="text-lg opacity-90 text-white">Plots & farmland</p>
               </div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland in Sonipat</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-(--color-navy) font-serif mb-6">Plots & farmland in Sonipat</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 Most buyers here are weighing plots around Kundli, NH-44, the KMP Expressway and the new university belt. Tell us your budget and how you want to use it, and we&apos;ll show you which pockets are worth it and which to avoid. We check DTCP approval and clear title before recommending anything, and we take you to the site.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
-                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Call For Details</Button>
+                  <Button className="px-10 py-4 font-bold">Call about Sonipat</Button>
                 </a>
                 <a href="https://wa.me/919910070102?text=I'm interested in properties in Sonipat" target="_blank" rel="noopener noreferrer">
-                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Inquiry</Button>
+                  <Button variant="secondary" className="px-10 py-4 font-bold">WhatsApp us</Button>
                 </a>
               </div>
-              <a href="/plots-in-sonipat" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Sonipat →</a>
+              <a href="/plots-in-sonipat" className="inline-block mt-5 font-semibold text-(--color-navy) hover:text-(--color-gold)">View all plots in Sonipat →</a>
             </div>
           </div>
         </div>
@@ -167,26 +167,26 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmhouse land in Gurgaon</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-(--color-navy) font-serif mb-6">Plots & farmhouse land in Gurgaon</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 We work the plot and farmhouse side of Gurgaon. Think New Gurgaon sectors, the Dwarka Expressway belt, and farmhouse land towards Sohna and Pataudi. Tell us how you want to use it and we&apos;ll give you an honest read on what your budget gets, and what to check before you pay.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
-                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Inquire Now</Button>
+                  <Button className="px-10 py-4 font-bold">Call about Gurgaon</Button>
                 </a>
                 <a href="https://wa.me/919910070102?text=I'm interested in properties in Gurgaon" target="_blank" rel="noopener noreferrer">
-                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">WhatsApp Connect</Button>
+                  <Button variant="secondary" className="px-10 py-4 font-bold">WhatsApp us</Button>
                 </a>
               </div>
-              <a href="/plots-in-gurgaon" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View all plots in Gurgaon →</a>
+              <a href="/plots-in-gurgaon" className="inline-block mt-5 font-semibold text-(--color-navy) hover:text-(--color-gold)">View all plots in Gurgaon →</a>
             </div>
             <div className="order-1 md:order-2 relative h-96 rounded-3xl overflow-hidden shadow-2xl">
               <Image src="/images/gurgaon-skyline.png" alt="Gurgaon" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-3xl font-bold font-serif">Gurgaon</h3>
-                <p className="text-lg opacity-90">Plots & farmhouse land</p>
+                <h3 className="text-3xl font-bold font-serif text-white">Gurgaon</h3>
+                <p className="text-lg opacity-90 text-white">Plots & farmhouse land</p>
               </div>
             </div>
           </div>
@@ -201,83 +201,83 @@ export default function Home() {
               <Image src="/images/vrindavan-luxury.png" alt="Vrindavan" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-3xl font-bold font-serif">Vrindavan</h3>
-                <p className="text-lg opacity-90">Plots & farmland</p>
+                <h3 className="text-3xl font-bold font-serif text-white">Vrindavan</h3>
+                <p className="text-lg opacity-90 text-white">Plots & farmland</p>
               </div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-[--color-navy] font-serif mb-6">Plots & farmland near Vrindavan</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-(--color-navy) font-serif mb-6">Plots & farmland near Vrindavan</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 Plots and farmland around Vrindavan and Mathura, close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here changes hands without clean approvals, so we check MVDA approval and title first, and walk the site with you before you decide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="tel:+919910070102">
-                  <Button className="px-10 py-4 royal-gold-bg text-white font-bold rounded-xl shadow-lg">Get Information</Button>
+                  <Button className="px-10 py-4 font-bold">Call about Vrindavan</Button>
                 </a>
                 <a href="https://wa.me/919910070102?text=I'm interested in properties in Vrindavan" target="_blank" rel="noopener noreferrer">
-                  <Button variant="secondary" className="px-10 py-4 border-2 border-[--color-navy] text-[--color-navy] font-bold rounded-xl">Inquire on WhatsApp</Button>
+                  <Button variant="secondary" className="px-10 py-4 font-bold">WhatsApp us</Button>
                 </a>
               </div>
-              <a href="/farmland-near-vrindavan" className="inline-block mt-5 font-semibold text-[--color-navy] hover:text-[--color-gold]">View farmland near Vrindavan →</a>
+              <a href="/farmland-near-vrindavan" className="inline-block mt-5 font-semibold text-(--color-navy) hover:text-(--color-gold)">View farmland near Vrindavan →</a>
             </div>
           </div>
         </div>
       </Section>
 
-      <Section id="sections" className="border-t border-gray-200 bg-[--color-muted]">
+      <Section id="sections" className="border-t border-gray-200 bg-(--color-muted)">
         <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Our Services</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3 font-serif">Our Services</h2>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
             What we help with, whether you&apos;re buying land to live on, to invest, or to build
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-          <a href="/investors" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
+          <a href="/investors" className="group premium-card rounded-xl hover:border-(--color-gold) transition-all duration-300 overflow-hidden h-full flex flex-col">
             <div className="relative h-48">
               <Image src="/images/investors.jpg" alt="For Investors" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             </div>
             <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Investors & HNIs</h3>
+              <h3 className="text-xl font-bold text-(--color-navy) mb-3 font-serif">Investors & HNIs</h3>
               <p className="text-gray-600 text-sm mb-4 flex-1">Land picked for investors, with approvals and title checked first.</p>
-              <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
+              <div className="flex items-center text-(--color-navy) font-semibold group-hover:text-(--color-gold) transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
           </a>
           
-          <a href="/buyers" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
+          <a href="/buyers" className="group premium-card rounded-xl hover:border-(--color-gold) transition-all duration-300 overflow-hidden h-full flex flex-col">
             <div className="relative h-48">
               <Image src="/images/hero-buyers.jpg" alt="For Home Buyers" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             </div>
             <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Home Buyers</h3>
+              <h3 className="text-xl font-bold text-(--color-navy) mb-3 font-serif">Home Buyers</h3>
               <p className="text-gray-600 text-sm mb-4 flex-1">Help finding and buying a plot or home across Delhi NCR and Vrindavan.</p>
-              <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
+              <div className="flex items-center text-(--color-navy) font-semibold group-hover:text-(--color-gold) transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
           </a>
           
-          <a href="/finance" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
+          <a href="/finance" className="group premium-card rounded-xl hover:border-(--color-gold) transition-all duration-300 overflow-hidden h-full flex flex-col">
             <div className="relative h-48">
               <Image src="/images/Finance.jpg" alt="Finance & Loans" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             </div>
             <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Finance & Loans</h3>
+              <h3 className="text-xl font-bold text-(--color-navy) mb-3 font-serif">Finance & Loans</h3>
               <p className="text-gray-600 text-sm mb-4 flex-1">Home loans, loan against property and NRI support.</p>
-              <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
+              <div className="flex items-center text-(--color-navy) font-semibold group-hover:text-(--color-gold) transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
           </a>
           
-          <a href="/about" className="group premium-card rounded-xl border-2 border-[--color-navy] hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col" style={{background: 'linear-gradient(135deg, #1e3a8a 0%, #c5a880 100%)'}}>
+          <a href="/about" className="group premium-card rounded-xl border-2 border-(--color-navy) hover:border-(--color-gold) transition-all duration-300 overflow-hidden h-full flex flex-col" style={{background: 'linear-gradient(135deg, #1e3a8a 0%, #c5a880 100%)'}}>
             <div className="p-6 flex-1 flex flex-col">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-[#1e3a8a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,14 +296,14 @@ export default function Home() {
       </Section>
 
       {/* Property Showcase Section */}
-      <Section className="border-t border-gray-200 bg-[--color-muted] relative overflow-hidden">
+      <Section className="border-t border-gray-200 bg-(--color-muted) relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <Image src="/images/NoidaDevelopment.jpg" alt="" fill className="object-cover opacity-3" />
+          <Image src="/images/NoidaDevelopment.jpg" alt="" fill className="object-cover opacity-5" />
           <div className="absolute inset-0 bg-white/90" />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[--color-navy] mb-4 font-serif">Property Portfolio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-(--color-navy) mb-4 font-serif">Property Portfolio</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               The kinds of property we handle across Delhi NCR and Vrindavan
             </p>
@@ -340,41 +340,41 @@ export default function Home() {
 
       <Section className="border-t border-gray-200">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Why Choose Property Specialist</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3 font-serif">Why Choose Property Specialist</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8">
             16 years in real estate across Delhi NCR, Sonipat and Vrindavan, and straight with you at every step
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center premium-card p-6 rounded-xl">
-              <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-(--color-navy) rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white text-xl font-bold font-serif">16</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in real estate</h3>
+              <h3 className="text-lg font-bold text-(--color-navy) mb-2 font-serif">Years in real estate</h3>
               <p className="text-gray-600 text-sm">Selling plots and farmland across Delhi NCR, Sonipat and Vrindavan since 2010.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
-              <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-(--color-navy) rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white text-xl font-bold font-serif">3</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Markets we know</h3>
+              <h3 className="text-lg font-bold text-(--color-navy) mb-2 font-serif">Markets we know</h3>
               <p className="text-gray-600 text-sm">Vrindavan, Sonipat and Gurgaon. We stick to the areas we know well instead of claiming everywhere.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
-              <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-(--color-navy) rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white text-xl font-bold font-serif">28</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in business</h3>
-              <p className="text-gray-600 text-sm">Nearly three decades of overall industry experience behind every deal.</p>
+              <h3 className="text-lg font-bold text-(--color-navy) mb-2 font-serif">Years of experience</h3>
+              <p className="text-gray-600 text-sm">Nearly three decades across the wider industry, behind every deal we do today.</p>
             </div>
           </div>
         </div>
       </Section>
 
-      <Section className="border-t border-gray-200 bg-[--color-muted]">
+      <Section className="border-t border-gray-200 bg-(--color-muted)">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Frequently Asked Questions</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3 font-serif">Frequently Asked Questions</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
-            Common questions
+            The things buyers ask us most
           </p>
           <div className="text-left max-w-4xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <Accordion
@@ -405,13 +405,13 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="contact" className="border-t border-gray-200 bg-[--color-muted]">
+      <Section id="contact" className="border-t border-gray-200 bg-(--color-muted)">
         <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-white border-2 border-[--color-navy] text-[--color-navy] px-6 py-3 rounded-full text-base font-semibold mb-8">
-            <span className="w-3 h-3 bg-[--color-brand] rounded-full animate-pulse"></span>
-            Ready to Get Started?
+          <div className="inline-flex items-center gap-2 bg-white border-2 border-(--color-navy) text-(--color-navy) px-6 py-3 rounded-full text-base font-semibold mb-8">
+            <span className="w-3 h-3 bg-(--color-brand) rounded-full animate-pulse"></span>
+            Have a plot in mind?
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[--color-navy] font-serif">Want to see some plots?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-(--color-navy) font-serif">Want to see some plots?</h2>
           <p className="text-base md:text-lg mb-8 text-gray-700 leading-relaxed max-w-2xl mx-auto">
             Call or WhatsApp and tell us what you&apos;re looking for. We&apos;ll get back to you quickly.
           </p>

@@ -21,11 +21,11 @@ export default function Accordion({ items }: AccordionProps) {
               aria-expanded={isOpen}
               onClick={() => setOpenId(isOpen ? null : item.id)}
             >
-              <span className="font-medium text-[--color-navy]">{item.question}</span>
-              <span className="ml-2 select-none text-[--color-brand]">{isOpen ? "–" : "+"}</span>
+              <span className="font-medium text-(--color-navy)">{item.question}</span>
+              <span className="ml-2 select-none text-(--color-brand)">{isOpen ? "–" : "+"}</span>
             </button>
             {isOpen ? (
-              <div className="mt-2 text-sm text-[--color-foreground]">{item.answer}</div>
+              <div className="mt-2 text-sm text-(--color-foreground)">{item.answer}</div>
             ) : null}
           </div>
         );

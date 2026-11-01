@@ -12,7 +12,7 @@ export default async function CityListings({ city, title }: { city: string; titl
   return (
     <Section className="border-t border-gray-200">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-6">{title}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-6">{title}</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((l, i) => (
             <ListingCard key={`${l.id}-${i}`} l={l} />
