@@ -70,9 +70,6 @@ export default function BuyersPage() {
               </p>
             </div>
           </div>
-          <div className="mt-10">
-            <Button href="#contact">Find the right plot</Button>
-          </div>
         </div>
       </Section>
 

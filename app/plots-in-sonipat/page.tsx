@@ -24,7 +24,7 @@ export default async function PlotsInSonipatPage() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-(--color-navy) leading-[1.1] mb-5">Plots &amp; farmland in Sonipat &amp; Kundli</h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-            Honest advice on where to buy near NH-44, the KMP Expressway and the education-city belt, and what to check before you pay. 16 years in real estate across the NCR and Vrindavan.
+            Where to buy near NH-44, the KMP Expressway and the Rajiv Gandhi Education City belt, and what to check before you pay.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button href={TEL_HREF}>Call us</Button>

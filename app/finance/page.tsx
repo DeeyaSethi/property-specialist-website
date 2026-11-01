@@ -66,9 +66,6 @@ export default function FinancePage() {
               </p>
             </div>
           </div>
-          <div className="mt-10">
-            <Button href="#contact">Ask about finance</Button>
-          </div>
         </div>
       </Section>
 

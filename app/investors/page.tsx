@@ -79,9 +79,6 @@ export default function InvestorsPage() {
             </p>
           </div>
         </div>
-        <div className="text-center mt-10">
-          <Button href="#contact">Talk to us about options</Button>
-        </div>
       </Section>
 
       <Section id="contact" bg="muted" className="border-t border-gray-200">
