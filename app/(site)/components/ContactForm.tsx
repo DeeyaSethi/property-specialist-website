@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import Button from "./ui/Button";
+import { TEL_HREF, PHONE_DISPLAY, whatsapp } from "../../lib/contact";
 
-const btn =
-  "inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-(--color-gold) focus:ring-offset-2";
-const btnPrimary = `${btn} bg-(--color-navy) text-white shadow-lg hover:shadow-xl hover:bg-(--color-gold) hover:scale-105`;
-const btnSecondary = `${btn} bg-white border-2 border-(--color-navy) text-(--color-navy) hover:bg-(--color-gold) hover:text-white hover:border-(--color-gold) shadow-md hover:shadow-lg`;
 const inputCls =
-  "border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-(--color-brand)";
-const WA = "https://wa.me/919910070102?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20a%20plot";
+  "w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-(--color-gold) focus:border-(--color-navy)";
+
+const WA_GENERAL = whatsapp("Hi, I'd like to talk about a plot");
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
@@ -42,34 +40,67 @@ export default function ContactForm() {
     return (
       <div className="rounded-xl border-2 border-(--color-navy) bg-white p-8 text-center">
         <h3 className="text-xl font-bold text-(--color-navy) mb-2">Thanks, we have your details.</h3>
-        <p className="text-gray-700 mb-6">We will call or message you back shortly. If it is urgent, reach us directly.</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+919910070102" className={btnPrimary}>Call 99100 70102</a>
-          <a href={WA} target="_blank" rel="noopener noreferrer" className={btnSecondary}>WhatsApp us</a>
+        <p className="text-gray-600 mb-6">
+          We will call or message you back shortly. If it is urgent, reach us directly.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Button href={TEL_HREF}>Call {PHONE_DISPLAY}</Button>
+          <Button href={WA_GENERAL} target="_blank" rel="noopener noreferrer" variant="secondary">
+            WhatsApp us
+          </Button>
         </div>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-2 grid grid-cols-1 gap-4">
-      <input name="name" placeholder="Name" className={inputCls} required />
-      <input name="email" type="email" placeholder="Email" className={inputCls} required />
-      <input name="phone" placeholder="Phone" className={inputCls} />
-      <select name="type" className={inputCls} defaultValue="Buyer">
-        <option>Buyer</option>
-        <option>Investor</option>
-      </select>
+    <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4">
+      <div>
+        <label htmlFor="name" className="block text-sm font-medium text-(--color-navy) mb-1">
+          Name
+        </label>
+        <input id="name" name="name" placeholder="Your name" className={inputCls} required />
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-(--color-navy) mb-1">
+          Email
+        </label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" className={inputCls} required />
+      </div>
+      <div>
+        <label htmlFor="phone" className="block text-sm font-medium text-(--color-navy) mb-1">
+          Phone
+        </label>
+        <input id="phone" name="phone" placeholder="Your phone number" className={inputCls} />
+      </div>
+      <div>
+        <label htmlFor="type" className="block text-sm font-medium text-(--color-navy) mb-1">
+          I am a
+        </label>
+        <select id="type" name="type" className={inputCls} defaultValue="Buyer">
+          <option>Buyer</option>
+          <option>Investor</option>
+        </select>
+      </div>
       {/* honeypot: real people leave this empty */}
-      <input type="text" name="company" className="hidden" tabIndex={-1} aria-hidden="true" autoComplete="off" />
+      <input
+        type="text"
+        name="company"
+        className="hidden"
+        tabIndex={-1}
+        aria-hidden="true"
+        autoComplete="off"
+      />
       {status === "error" && (
         <p className="text-sm text-red-600">Something went wrong. Please call or WhatsApp us instead.</p>
       )}
-      <div className="flex flex-wrap gap-4 items-center">
+      <div className="flex flex-wrap gap-3 items-center">
         <Button type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Sending..." : "Submit"}
         </Button>
-        <a href={WA} target="_blank" rel="noopener noreferrer" className={btnSecondary}>WhatsApp Us</a>
+        <Button href={WA_GENERAL} target="_blank" rel="noopener noreferrer" variant="secondary">
+          WhatsApp us
+        </Button>
       </div>
     </form>
   );

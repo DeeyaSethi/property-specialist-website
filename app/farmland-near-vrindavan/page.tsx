@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Section from "../(site)/components/ui/Section";
+import Button from "../(site)/components/ui/Button";
+import Badge from "../(site)/components/ui/Badge";
 import CityListings from "../(site)/components/CityListings";
+import { TEL_HREF, whatsapp } from "../lib/contact";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Farmland & Plots near Vrindavan",
@@ -11,28 +14,21 @@ export const metadata: Metadata = {
   alternates: { canonical: "/farmland-near-vrindavan" },
 };
 
-const btn =
-  "inline-flex items-center justify-center rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-(--color-gold) focus:ring-offset-2";
-const btnPrimary = `${btn} bg-(--color-navy) text-white shadow-lg hover:shadow-xl hover:bg-(--color-gold) hover:scale-105`;
-const btnSecondary = `${btn} bg-white border-2 border-(--color-navy) text-(--color-navy) hover:bg-(--color-gold) hover:text-white hover:border-(--color-gold) shadow-md hover:shadow-lg`;
-const WA = "https://wa.me/919910070102?text=Hi%2C%20I%27m%20interested%20in%20farmland%20near%20Vrindavan";
-
 export default async function FarmlandNearVrindavanPage() {
   return (
     <main className="font-sans">
-      <Section bg="gradient" className="py-10 md:py-14">
-        <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-white border-2 border-(--color-brand) text-(--color-brand) px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <span className="w-2 h-2 bg-(--color-brand) rounded-full"></span>
-            Vrindavan &amp; Mathura, Uttar Pradesh
+      <Section bg="gradient" size="lg">
+        <div className="max-w-3xl">
+          <div className="mb-6">
+            <Badge>Vrindavan &amp; Mathura, Uttar Pradesh</Badge>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold text-(--color-navy) mb-6 leading-tight">Plots &amp; Farmland near Vrindavan &amp; Mathura</h1>
-          <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            Land close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here sells without clean approvals, so we check MVDA approval and title first. 16 years in this market.
+          <h1 className="text-4xl md:text-5xl font-bold text-(--color-navy) leading-[1.1] mb-5">Plots &amp; farmland near Vrindavan &amp; Mathura</h1>
+          <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+            Land close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here sells without clean approvals, so we check MVDA approval and title first. 16 years in real estate across the NCR and Vrindavan.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+919910070102" className={btnPrimary}>Call us</a>
-            <a href={WA} target="_blank" rel="noopener noreferrer" className={btnSecondary}>Ask on WhatsApp</a>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button href={TEL_HREF}>Call us</Button>
+            <Button href={whatsapp("Hi, I'm interested in farmland near Vrindavan")} target="_blank" rel="noopener noreferrer" variant="secondary">Ask on WhatsApp</Button>
           </div>
         </div>
       </Section>
@@ -41,7 +37,7 @@ export default async function FarmlandNearVrindavanPage() {
 
       <Section className="border-t border-gray-200 bg-(--color-muted)">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3">Where we work around Vrindavan</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-(--color-navy) mb-3">Where we work around Vrindavan</h2>
           <p className="text-gray-700 mb-8 max-w-3xl">We know which approaches and colonies are clean, and which to stay away from, so you buy with your eyes open.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="premium-card rounded-xl p-6">
@@ -66,18 +62,18 @@ export default async function FarmlandNearVrindavanPage() {
 
       <Section className="border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3">What we check before we recommend land</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-(--color-navy) mb-3">What we check before we recommend land</h2>
           <p className="text-gray-700 mb-8 max-w-3xl">Vrindavan has a lot of unapproved land changing hands. This is what we go through before you put any money down.</p>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="premium-card p-6 rounded-xl">
               <h3 className="font-bold text-(--color-navy) mb-2">MVDA approval</h3>
               <p className="text-gray-600 text-sm">Whether the colony is approved by the Mathura-Vrindavan Development Authority, not an unapproved layout.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="premium-card p-6 rounded-xl">
               <h3 className="font-bold text-(--color-navy) mb-2">Clear title</h3>
               <p className="text-gray-600 text-sm">We check the title and mutation in the Bhulekh UP records, so you know the seller can actually sell.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="premium-card p-6 rounded-xl">
               <h3 className="font-bold text-(--color-navy) mb-2">Land use</h3>
               <p className="text-gray-600 text-sm">Whether farmland is still agricultural, and what a Section 143 conversion to residential involves.</p>
             </div>
@@ -87,7 +83,7 @@ export default async function FarmlandNearVrindavanPage() {
 
       <Section className="border-t border-gray-200 bg-(--color-muted)">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-(--color-navy) mb-3">Why people are buying near Vrindavan</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-(--color-navy) mb-3">Why people are buying near Vrindavan</h2>
           <ul className="content grid gap-3 text-gray-700">
             <li>Steady demand from devotees and families who want a second home near the temples.</li>
             <li>The Yamuna Expressway puts it within easy reach of Noida, Agra and the new Noida (Jewar) airport.</li>
@@ -100,11 +96,11 @@ export default async function FarmlandNearVrindavanPage() {
 
       <Section id="contact" className="border-t border-gray-200 bg-(--color-muted)">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-(--color-navy)">Want to see land near Vrindavan?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-(--color-navy)">Want to see land near Vrindavan?</h2>
           <p className="text-lg mb-8 text-gray-700">Tell us your budget and what the land is for, and we will shortlist a few and walk the site with you.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+919910070102" className={btnPrimary}>Call us</a>
-            <a href={WA} target="_blank" rel="noopener noreferrer" className={btnSecondary}>Ask on WhatsApp</a>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+            <Button href={TEL_HREF}>Call us</Button>
+            <Button href={whatsapp("Hi, I'm interested in farmland near Vrindavan")} target="_blank" rel="noopener noreferrer" variant="secondary">Ask on WhatsApp</Button>
           </div>
           <p className="text-sm text-gray-600">Also looking elsewhere? See <a href="/plots-in-sonipat" className="font-semibold text-(--color-navy) underline">plots in Sonipat</a> or <a href="/plots-in-gurgaon" className="font-semibold text-(--color-navy) underline">plots in Gurgaon</a>.</p>
         </div>

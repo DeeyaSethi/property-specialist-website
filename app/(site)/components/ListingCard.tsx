@@ -1,4 +1,5 @@
 import type { Listing } from "../../lib/listings";
+import { TEL_HREF, whatsapp } from "../../lib/contact";
 
 function statusClasses(status: string): string {
   const s = status.toLowerCase();
@@ -8,15 +9,16 @@ function statusClasses(status: string): string {
 }
 
 function waLink(l: Listing): string {
-  const text = `Hi, I'm interested in: ${l.title}${l.id ? ` (${l.id})` : ""}`;
-  return `https://wa.me/919910070102?text=${encodeURIComponent(text)}`;
+  return whatsapp(`Hi, I'm interested in: ${l.title}${l.id ? ` (${l.id})` : ""}`);
 }
+
+const isHttpUrl = (v: string) => /^https?:\/\//i.test(v);
 
 export default function ListingCard({ l }: { l: Listing }) {
   return (
     <div className="premium-card rounded-xl overflow-hidden flex flex-col">
       <div className="relative h-44 bg-(--color-navy) flex items-center justify-center">
-        {/^https?:\/\//i.test(l.photo) ? (
+        {isHttpUrl(l.photo) ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={l.photo} alt={l.title} loading="lazy" className="h-full w-full object-cover" />
         ) : (
@@ -34,9 +36,9 @@ export default function ListingCard({ l }: { l: Listing }) {
         {l.approval ? <p className="mt-2 text-xs font-semibold text-(--color-dark-gold)">{l.approval}</p> : null}
         {l.highlights ? <p className="mt-2 text-sm text-gray-600">{l.highlights}</p> : null}
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
-          <a href="tel:+919910070102" className="text-sm font-semibold text-(--color-navy) hover:text-(--color-gold)">Call</a>
+          <a href={TEL_HREF} className="text-sm font-semibold text-(--color-navy) hover:text-(--color-gold)">Call</a>
           <a href={waLink(l)} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-(--color-navy) hover:text-(--color-gold) underline">Ask on WhatsApp</a>
-          {l.map ? <a href={l.map} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-(--color-navy) hover:text-(--color-gold)">Map</a> : null}
+          {l.map && isHttpUrl(l.map) ? <a href={l.map} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-(--color-navy) hover:text-(--color-gold)">Map</a> : null}
         </div>
       </div>
     </div>

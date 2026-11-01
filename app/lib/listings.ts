@@ -94,16 +94,30 @@ function rowsToListings(rows: string[][]): Listing[] {
     .map((x) => x.listing);
 }
 
+const MAX_CSV_BYTES = 2_000_000; // guard against a misbehaving/huge sheet
+
 export async function getListings(): Promise<Listing[]> {
   const url = process.env.LISTINGS_CSV_URL;
   if (!url) return [];
   try {
-    const res = await fetch(url, { next: { revalidate: 300 } });
-    if (!res.ok) return [];
+    const res = await fetch(url, {
+      next: { revalidate: 300 },
+      signal: AbortSignal.timeout(5000),
+    });
+    if (!res.ok) {
+      console.error(`getListings: CSV fetch returned ${res.status}`);
+      return [];
+    }
+    const declaredLength = Number(res.headers.get("content-length") || 0);
+    if (declaredLength > MAX_CSV_BYTES) {
+      console.error(`getListings: CSV too large (${declaredLength} bytes)`);
+      return [];
+    }
     // Strip a leading BOM (Google published CSVs sometimes include one).
     const text = (await res.text()).replace(/^﻿/, "");
     return rowsToListings(parseCsv(text));
-  } catch {
+  } catch (err) {
+    console.error("getListings failed", err);
     return [];
   }
 }
