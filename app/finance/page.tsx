@@ -35,8 +35,8 @@ export default function FinancePage() {
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5">
               <Image
-                src="/images/MarketAnalysis.jpg"
-                alt="Finance for buying land"
+                src="/images/sonipat-plots.png"
+                alt="A gated plotted development in Delhi NCR"
                 fill
                 sizes="(max-width: 1024px) 90vw, 560px"
                 className="object-cover"

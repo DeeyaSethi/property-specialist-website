@@ -172,7 +172,7 @@ export default function Home() {
       <Section bg="white">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
           <h2 className="text-3xl md:text-4xl font-bold text-(--color-navy)">
-            Meet <span className="text-(--color-gold)">Manoj Sethi</span>
+            Meet <span className="text-(--color-dark-gold)">Manoj Sethi</span>
           </h2>
           <div className="relative w-40 h-40 lg:w-48 lg:h-48">
             <Image
