@@ -1,11 +1,11 @@
-type BadgeProps = React.PropsWithChildren<Record<string, never>>;
+import type { ReactNode } from "react";
 
-export default function Badge({ children }: BadgeProps) {
+// Small "eyebrow" pill used above section headings for context.
+export default function Badge({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full bg-[--color-accent] px-3 py-1 text-xs font-medium text-[--color-navy]">
+    <span className="inline-flex items-center gap-2 rounded-full border border-(--color-gold)/60 bg-(--color-gold)/10 px-4 py-1.5 text-sm font-semibold text-(--color-navy)">
+      <span className="h-1.5 w-1.5 rounded-full bg-(--color-gold)" aria-hidden />
       {children}
     </span>
   );
 }
-
-
