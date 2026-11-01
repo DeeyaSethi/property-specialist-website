@@ -28,7 +28,7 @@ export default async function PlotsInGurgaonPage() {
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-[--color-navy] mb-6 leading-tight">Plots &amp; Farmhouse Land in Gurgaon</h1>
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            We work the plot and farmhouse side of Gurgaon, from New Gurgaon and the Dwarka Expressway belt to the farmhouse pockets near Sohna. Honest advice on what your budget actually gets. 28 years in these markets.
+            We work the plot and farmhouse side of Gurgaon, from New Gurgaon and the Dwarka Expressway belt to the farmhouse pockets near Sohna. Honest advice on what your budget actually gets. 16 years in these markets.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:+919910070102" className={btnPrimary}>Call us</a>

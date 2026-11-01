@@ -11,7 +11,6 @@ export default function Home() {
         <div className="flex items-center gap-2">
           <span className="hidden md:inline font-medium opacity-90">Direct Inquiry:</span>
           <a href="tel:+919910070102" className="flex items-center gap-2 font-bold hover:text-[--color-gold] transition-colors">
-            <span className="p-1 bg-white/10 rounded-full">📞</span>
             9910070102
           </a>
         </div>
@@ -49,18 +48,18 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a href="#contact" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 <Button className="px-10 py-4 text-lg royal-shadow hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 royal-gold-bg border-2 royal-gold-border">
-                  Start Your Journey
+                  Talk to us
                 </Button>
               </a>
               <a href="#sections" className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
                 <Button variant="secondary" className="px-10 py-4 text-lg shadow-md hover:royal-shadow-lg transform hover:scale-105 transition-all duration-300 border-2 royal-gold-border hover:royal-gold-bg hover:text-white">
-                  Explore Opportunities
+                  Browse by location
                 </Button>
               </a>
             </div>
 
             <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <p className="text-sm font-bold text-white uppercase tracking-widest mb-4 opacity-100" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Quick Inquiry by Location:</p>
+              <p className="text-sm font-bold text-white uppercase tracking-widest mb-4 opacity-100" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Where we work:</p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <a href="#sonipat" className="px-6 py-2 rounded-full border-2 border-[--color-gold] text-white font-bold hover:bg-[--color-gold] hover:text-[--color-navy] transition-all duration-300 text-sm shadow-lg backdrop-blur-sm bg-black/10">
                    Sonipat
@@ -79,7 +78,7 @@ export default function Home() {
             <div className="relative blueprint-overlay">
               <Image 
                 src="/images/ResidentialProperties.jpg" 
-                alt="Premium Residential Properties" 
+                alt="Residential plots and farmland"
                 width={500} 
                 height={400} 
                 className="rounded-2xl shadow-2xl opacity-100 hover:scale-105 transition-transform duration-300"
@@ -109,7 +108,7 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-lg"
                 />
                 <div className="absolute -top-2 -right-2 bg-[#d4af37] text-white px-3 py-1 rounded-full text-xs font-bold shadow-2xl border-4 border-white" style={{backgroundColor: '#d4af37', color: 'white', zIndex: 20}}>
-                  28 Years
+                  16 Years
                 </div>
               </div>
             </div>
@@ -117,7 +116,7 @@ export default function Home() {
             {/* Content */}
             <div className="text-center">
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
-                <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">28 years</span> in property and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and his job is to tell you the truth about a plot before you buy it.
+                <span className="font-bold text-[--color-navy] bg-[--color-gold]/10 px-2 py-1 rounded">16 years</span> in real estate and <span className="font-bold text-[--color-gold] bg-[--color-navy]/5 px-2 py-1 rounded">₹250+ crore</span> in deals closed. Manoj works across Delhi NCR and Vrindavan, and his job is to tell you the truth about a plot before you buy it.
               </p>
               
               <div className="flex justify-center">
@@ -233,21 +232,6 @@ export default function Home() {
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-          <a href="/developers" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
-            <div className="relative h-48">
-              <Image src="/images/developers.jpg" alt="For Developers" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-            </div>
-            <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">For Developers</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Sales and marketing help for developers launching plotted and housing projects.</p>
-              <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
-                <span>Learn More</span>
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </a>
-          
           <a href="/investors" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
             <div className="relative h-48">
               <Image src="/images/investors.jpg" alt="For Investors" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
@@ -285,22 +269,7 @@ export default function Home() {
             </div>
             <div className="p-6 flex-1 flex flex-col">
               <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Finance & Loans</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Home loans, loan against property, and project funding.</p>
-              <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
-                <span>Learn More</span>
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </a>
-          
-          <a href="/podcast" className="group premium-card rounded-xl hover:border-[--color-gold] transition-all duration-300 overflow-hidden h-full flex flex-col">
-            <div className="relative h-48">
-              <Image src="/images/Podcast.jpg" alt="Podcast & Insights" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-            </div>
-            <div className="p-6 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold text-[--color-navy] mb-3 font-serif">Podcast & Insights</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-1">Industry trends, market insights: The Real Estate Edge podcast.</p>
+              <p className="text-gray-600 text-sm mb-4 flex-1">Home loans, loan against property and NRI support.</p>
               <div className="flex items-center text-[--color-navy] font-semibold group-hover:text-[--color-gold] transition-colors">
                 <span>Learn More</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -316,7 +285,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 font-serif">About Manoj Sethi</h3>
-              <p className="text-white/90 text-sm mb-4 flex-1">Meet Manoj Sethi, 28 years in real estate.</p>
+              <p className="text-white/90 text-sm mb-4 flex-1">Meet Manoj Sethi. In real estate since 2010.</p>
               <div className="flex items-center text-white font-semibold group-hover:text-white/90 transition-colors">
                 <span>Meet The Founder</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -340,50 +309,29 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="group premium-card rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
               <div className="relative h-64">
-                <Image src="/images/ResidentialProperties.jpg" alt="Residential Properties" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/ResidentialProperties.jpg" alt="Residential plots" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
                 <div className="absolute bottom-4 left-4" style={{color: 'white'}}>
-                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Residential</h3>
-                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Premium Apartments & Villas</p>
+                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Plots</h3>
+                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Gated and sector plots</p>
                 </div>
               </div>
             </div>
             
             <div className="group premium-card rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
               <div className="relative h-64">
-                <Image src="/images/CommercialSpaces.jpg" alt="Commercial Spaces" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/LuxuryFarmhouses.jpg" alt="Farmland" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
                 <div className="absolute bottom-4 left-4" style={{color: 'white'}}>
-                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Commercial</h3>
-                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Office Spaces & Retail</p>
+                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Farmland</h3>
+                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Farmhouse and agricultural land</p>
                 </div>
               </div>
             </div>
             
-            <div className="group premium-card rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
-              <div className="relative h-64">
-                <Image src="/images/LuxuryFarmhouses.jpg" alt="Luxury Farmhouses" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
-                <div className="absolute bottom-4 left-4" style={{color: 'white'}}>
-                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Farmhouses</h3>
-                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Luxury Rural Retreats</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group premium-card rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
-              <div className="relative h-64">
-                <Image src="/images/IndustrialLand.jpg" alt="Industrial Land" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
-                <div className="absolute bottom-4 left-4" style={{color: 'white'}}>
-                  <h3 className="text-xl font-bold font-serif mb-1" style={{color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Industrial</h3>
-                  <p className="text-sm font-medium" style={{color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Land & Development</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </Section>
@@ -394,15 +342,15 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Why Choose Property Specialist</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8">
-            28 years in the Delhi NCR, Sonipat and Vrindavan land market, and straight with you at every step
+            16 years in real estate across Delhi NCR, Sonipat and Vrindavan, and straight with you at every step
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">28</span>
+                <span className="text-white text-xl font-bold font-serif">16</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in land</h3>
-              <p className="text-gray-600 text-sm">Buying and selling plots and farmland across Delhi NCR, Sonipat and Vrindavan.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in real estate</h3>
+              <p className="text-gray-600 text-sm">Selling plots and farmland across Delhi NCR, Sonipat and Vrindavan since 2010.</p>
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -413,10 +361,10 @@ export default function Home() {
             </div>
             <div className="text-center premium-card p-6 rounded-xl">
               <div className="w-16 h-16 bg-[--color-navy] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold font-serif">✓</span>
+                <span className="text-white text-xl font-bold font-serif">28</span>
               </div>
-              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Checked first</h3>
-              <p className="text-gray-600 text-sm">We verify approvals and clear title before recommending a plot, and we visit the site with you.</p>
+              <h3 className="text-lg font-bold text-[--color-navy] mb-2 font-serif">Years in business</h3>
+              <p className="text-gray-600 text-sm">Nearly three decades of overall industry experience behind every deal.</p>
             </div>
           </div>
         </div>
@@ -426,7 +374,7 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[--color-navy] mb-3 font-serif">Frequently Asked Questions</h2>
           <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
-            Get answers to common questions about our real estate services
+            Common questions
           </p>
           <div className="text-left max-w-4xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <Accordion
@@ -434,22 +382,22 @@ export default function Home() {
                 {
                   id: "areas",
                   question: "Which areas do you serve?",
-                  answer: "We specialize in Delhi NCR (Noida, Gurgaon, Delhi) and Vrindavan, plus nearby industrial corridors and emerging growth areas.",
+                  answer: "We work across Delhi NCR (Sonipat, Gurgaon, Delhi) and Vrindavan, and the areas nearby.",
                 },
                 {
                   id: "invest",
                   question: "What types of investments do you cover?",
-                  answer: "Our portfolio includes residential properties, commercial spaces, luxury farmhouses, industrial land, and agriculture-linked investment opportunities.",
+                  answer: "Mainly residential plots, farmland and farmhouse plots across Vrindavan, Sonipat and Gurgaon.",
                 },
                 {
                   id: "process",
                   question: "How do you ensure due diligence?",
-                  answer: "We conduct thorough verification of titles, developer credentials, legal approvals, and market analysis to align investments with your specific objectives.",
+                  answer: "We check the title, the mutation and the approvals, and we tell you who is really selling, before we recommend a plot.",
                 },
                 {
                   id: "experience",
                   question: "What makes Property Specialist different?",
-                  answer: "28 years in these markets, and we check the approvals and title before we recommend a plot. No pressure, and no surprises later.",
+                  answer: "16 years in real estate, and we check the approvals and title before we recommend a plot. No pressure, and no surprises later.",
                 },
               ]}
             />
@@ -471,7 +419,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 gap-6 max-w-lg mx-auto mb-12">
             <a href="tel:+919910070102" className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <Button className="w-full py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                📞 Call Now
+                Call Now
               </Button>
           </a>
           <a
@@ -482,7 +430,7 @@ export default function Home() {
               style={{animationDelay: '0.3s'}}
             >
               <Button variant="secondary" className="w-full py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                💬 WhatsApp Us
+                WhatsApp Us
               </Button>
             </a>
           </div>

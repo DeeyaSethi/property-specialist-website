@@ -4,13 +4,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://propertyspecialist.in";
   return [
     { url: `${base}/`, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/developers`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/investors`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.7 },    { url: `${base}/investors`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/buyers`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/finance`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/podcast`, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/finance`, changeFrequency: "monthly", priority: 0.7 },    { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/plots-in-sonipat`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/plots-in-gurgaon`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/farmland-near-vrindavan`, changeFrequency: "weekly", priority: 0.9 },

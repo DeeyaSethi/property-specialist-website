@@ -28,7 +28,7 @@ export default async function FarmlandNearVrindavanPage() {
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-[--color-navy] mb-6 leading-tight">Plots &amp; Farmland near Vrindavan &amp; Mathura</h1>
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            Land close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here sells without clean approvals, so we check MVDA approval and title first. 28 years in this market.
+            Land close to the temples, Parikrama Marg and the Yamuna Expressway. A lot of land here sells without clean approvals, so we check MVDA approval and title first. 16 years in this market.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:+919910070102" className={btnPrimary}>Call us</a>

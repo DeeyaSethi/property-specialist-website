@@ -58,7 +58,6 @@ export default function ContactForm() {
       <input name="phone" placeholder="Phone" className={inputCls} />
       <select name="type" className={inputCls} defaultValue="Buyer">
         <option>Buyer</option>
-        <option>Developer</option>
         <option>Investor</option>
       </select>
       {/* honeypot: real people leave this empty */}

@@ -8,35 +8,33 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image 
-                src="/images/logo-no-bg.png" 
-                alt="Property Specialist Logo" 
-                width={48} 
-                height={48} 
+              <Image
+                src="/images/logo-no-bg.png"
+                alt="Property Specialist Logo"
+                width={48}
+                height={48}
                 className="object-contain filter brightness-0 invert"
               />
               <div style={{color: 'white'}} className="font-bold text-xl font-serif">Property Specialist</div>
             </div>
-            <div style={{color: 'white'}} className="font-medium">Plots & farmland in Delhi NCR, Sonipat & Vrindavan</div>
-            <div style={{color: 'white'}} className="font-medium">Delhi NCR & Vrindavan</div>
-            <a 
-              style={{color: '#d4af37'}} 
-              className="inline-block hover:text-white transition-colors font-semibold royal-glow" 
+            <div style={{color: 'white'}} className="font-medium">Plots and farmland in Vrindavan, Sonipat and Gurgaon.</div>
+            <a
+              style={{color: '#d4af37'}}
+              className="inline-block hover:text-white transition-colors font-semibold royal-glow"
               href="tel:+919910070102"
             >
-              📞 +91 99100 70102
+              +91 99100 70102
             </a>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 style={{color: 'white'}} className="font-bold text-lg">Quick Links</h3>
             <div className="space-y-3">
-              <a href="/developers" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Developers</a>
+              <a href="/listings" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Plots</a>
               <a href="/investors" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Investors</a>
               <a href="/buyers" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Home Buyers</a>
-              <a href="/finance" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Finance & Loans</a>
-              <a href="/podcast" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Podcast</a>
+              <a href="/finance" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">Finance &amp; Loans</a>
               <a href="/about" style={{color: 'white'}} className="block hover:text-yellow-300 transition-colors font-medium">About</a>
             </div>
           </div>
@@ -45,24 +43,22 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 style={{color: 'white'}} className="font-bold text-lg">Contact Info</h3>
             <div className="space-y-3">
-                     <div style={{color: 'white'}} className="font-medium">📧 manojsethi@propertyspecialist.in</div>
-                     <div style={{color: 'white'}} className="font-medium">🕒 Every Day: 9:00 AM - 7:00 PM</div>
-                     <div style={{color: 'white'}} className="font-medium">📍 Cottage No 13 A Balraj Khanna Marg, Near Shadi Pur Metro Station, Patel Nagar</div>
+              <div style={{color: 'white'}} className="font-medium">manojsethi@propertyspecialist.in</div>
+              <div style={{color: 'white'}} className="font-medium">Open every day, 9:00 AM to 7:00 PM</div>
+              <div style={{color: 'white'}} className="font-medium">Cottage No 13 A, Balraj Khanna Marg, near Shadipur Metro Station, Patel Nagar</div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div className="border-t border-white/20">
         <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div style={{color: 'white'}} className="font-medium">© {new Date().getFullYear()} Property Specialist. All rights reserved.</div>
           <div className="mt-2 sm:mt-0" style={{color: 'white'}}>
-            <span style={{color: '#d4af37'}} className="font-bold royal-glow">28 Years</span> buying and selling land
+            <span style={{color: '#d4af37'}} className="font-bold royal-glow">In real estate since 2010</span>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
-
